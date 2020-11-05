@@ -62,8 +62,12 @@ class Home extends React.Component{
       <div>
         <Helmet>
           <title>Owen G. Bean</title>
+          <meta name="author" content="Owen G. Bean"></meta>
+          <meta name="application-name" content="Owen G. Bean"></meta>
           <meta name="description" content="Owen Bean is a front end developer from Maine. He mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS.
-                                            He creates elegant websites with screen respondsive and has the ability to be scaled up."></meta>
+                                            He creates elegant websites with screen respondsive and has the ability to be scaled up. 
+                                            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator">
+          </meta>
           <meta charset="UTF-8"></meta>
         </Helmet>
         <Navbar />

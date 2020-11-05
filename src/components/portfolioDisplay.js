@@ -41,7 +41,7 @@ class PortfolioDisplay extends React.Component{
                 margin: '0',
                 backgroundImage: 'url(' + this.props.image + ')',
                 backgroundPosition: 'center',
-                backgroundSize: '100%',
+                backgroundSize: '102%',
                 cursor: 'pointer',
             },
             box2: {
