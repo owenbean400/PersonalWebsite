@@ -1,13 +1,15 @@
 import React from 'react';
 
-class Button extends React.Component{
+class SideButton extends React.Component{
     constructor() {
         super();
         this.state = {
             hovering: false,
+            isPhone: false,
         }
         this.hover = this.hover.bind(this);
         this.leave = this.leave.bind(this);
+        this.phoneCheck = this.phoneCheck.bind(this);
     }
 
     hover(){
@@ -20,6 +22,16 @@ class Button extends React.Component{
         this.setState({
             hovering: false,
         })
+    }
+
+    phoneCheck(){
+        this.setState({
+            isPhone: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+        })
+    }
+
+    componentDidMount(){
+        this.phoneCheck();
     }
 
     render(){
@@ -36,14 +48,14 @@ class Button extends React.Component{
                 width: '200px',
                 height: '60px',
                 backgroundColor: 'rgba(0,0,0,0)',
-                color: (this.state.hovering || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ? 'white' : '#151035',
+                color: (this.state.hovering || this.state.isPhone) ? 'white' : '#151035',
                 border: '0',
                 transition: 'color 0.5s',
                 cursor: 'pointer',
                 fontSize: '18px'
             },
             circle: {
-                width: (this.state.hovering || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) ? '230px' : '60px',
+                width: (this.state.hovering || this.state.isPhone) ? '230px' : '60px',
                 height: '60px',
                 backgroundColor: '#20135c',
                 borderRadius: '70px',
@@ -65,4 +77,4 @@ class Button extends React.Component{
     }
 }
 
-export default Button
+export default SideButton

@@ -1,8 +1,9 @@
-import React from "react"
+import React, {useEffect} from "react"
 import Navbar from '../components/navbar/navbar.js';
 import Section from '../components/section.js';
 import Skills from '../components/skills.js';
 import FlexShow from '../components/flexShow.js';
+import StationaryButton from '../components/buttons/stationaryButton.js';
 import PortfolioDisplay from '../components/portfolioDisplay.js';
 import Footer from '../components/footer/footer.js';
 import OwenBean from '../images/owenbean.png';
@@ -16,27 +17,34 @@ import SassLogo from '../images/skills/sass.png';
 import ReactLogo from '../images/skills/react.png';
 import GatsbyLogo from '../images/skills/gatsby.png'
 
+import ReliableBoardPort from '../images/portfolio/reliable_board_display.jpg';
+import HereTheScoopPort from '../images/portfolio/here_the_scoop_display.jpg';
+import BeanJuicePort from '../images/portfolio/bean_juice_display.jpg';
+import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
+
 const AMOUNT_ROWS_PORTFOLIO = 1;
 
 class Home extends React.Component{
   constructor() {
       super();
       this.state = {
-        css: {
-          height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
-        }
+        height: 0,
       }
       this.updatePortfolioContainer = this.updatePortfolioContainer.bind(this);
   }
 
-  updatePortfolioContainer() {
-    this.setState({
-          height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
-    })
-  }
-
   componentDidMount(){
     window.addEventListener('resize', this.updatePortfolioContainer);
+    this.updatePortfolioContainer();
+  }
+
+  
+  updatePortfolioContainer() {
+    if (typeof window !== `undefined`){
+      this.setState({
+            height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
+      })
+    }
   }
 
   componentWillUnmount(){
@@ -45,7 +53,7 @@ class Home extends React.Component{
 
   render(){
     var STYLE = {
-      height: ((window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100) * AMOUNT_ROWS_PORTFOLIO + 'vw',
+      height: this.state.height + 'vw',
       overflow: 'hidden',
     }
 
@@ -55,8 +63,10 @@ class Home extends React.Component{
         <main className="index-main">
           <div className="header-container">
             <div className="title-container">
-              <h1 className="title">Front End Developer</h1>
-              <h3 className="subtitle">Coding Beatiful Designs!</h3>
+              <h1 className="title">Owen G. Bean</h1>
+              <h3 className="subtitle">Front End Developer</h3>
+              <h5 className="abouttitle">aka code the visuals of websites</h5>
+              <StationaryButton css={{marginTop: '12px'}} title="Contact Me"/>
             </div>
             <img className="owenbean-img" src={OwenBean}/>
           </div>
@@ -84,18 +94,10 @@ class Home extends React.Component{
           </Section>
           <Section header="Portfolio" actionName="Portfolio">
             <FlexShow css={STYLE}>
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
-              <PortfolioDisplay />
+              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage"/>
+              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website"/>
+              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website"/>
+              <PortfolioDisplay image={PortfolioPort} title="My Portfolio"/>
             </FlexShow>
           </Section>
         </main>

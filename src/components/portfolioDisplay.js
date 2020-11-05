@@ -5,7 +5,7 @@ class PortfolioDisplay extends React.Component{
     constructor() {
         super();
         this.state = {
-            backgroundImageSize: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
+            backgroundImageSize: 0,
             opacity: 0,
         }
         this.changeSize = this.changeSize.bind(this);
@@ -26,6 +26,7 @@ class PortfolioDisplay extends React.Component{
 
     componentDidMount() {
         window.addEventListener('resize', this.changeSize)
+        this.changeSize();
     }
 
     componentWillUnmount() {
@@ -38,7 +39,7 @@ class PortfolioDisplay extends React.Component{
                 width: this.state.backgroundImageSize + '%',
                 height: this.state.backgroundImageSize + 'vw',
                 margin: '0',
-                backgroundImage: 'url(' + "https://source.unsplash.com/random" + ')',
+                backgroundImage: 'url(' + this.props.image + ')',
                 backgroundPosition: 'center',
                 backgroundSize: '100%',
                 cursor: 'pointer',
@@ -61,7 +62,7 @@ class PortfolioDisplay extends React.Component{
         return(
             <div style={{...STYLE.box1}} onMouseEnter={this.toggleInfo} onMouseLeave={this.toggleInfo}>
                 <div style={{...STYLE.box2}}>
-                    <h5 style={{...STYLE.title}}>TITLE</h5>
+                <h5 style={{...STYLE.title}}>{this.props.title}</h5>
                 </div>
             </div>
         )

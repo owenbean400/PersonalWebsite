@@ -13,6 +13,7 @@ class SkillsIcon extends React.Component{
     hideInfoHover(e) {
         this.setState({
             displayingInfo: false,
+            scrollY: window.scrollY,
         })
     }
 
@@ -21,7 +22,13 @@ class SkillsIcon extends React.Component{
             displayingInfo: true,
             mousePositionX: e.clientX,
             mousePositionY: e.clientY,
+            scrollY: window.scrollY,
         })
+    }
+
+    componentDidMount(){
+    window.addEventListener('resize', this.updatePortfolioContainer);
+    this.hideInfoHover();
     }
 
     render(){
@@ -37,7 +44,7 @@ class SkillsIcon extends React.Component{
                 boxShadow: '3px 3px 10px 3px rgba(0,0,0,0.1)',
                 border: 'white 3px double',
                 color: 'white',
-                top: window.scrollY + this.state.mousePositionY - 100 + 'px',
+                top: this.state.scrollY + this.state.mousePositionY - 100 + 'px',
                 left: this.state.mousePositionX - 20 + 'px',
                 display: (this.state.displayingInfo) ? 'block' : 'none',
             }
