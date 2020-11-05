@@ -1,4 +1,5 @@
-import React, {useEffect} from "react"
+import React from "react";
+import {Helmet} from "react-helmet";
 import Navbar from '../components/navbar/navbar.js';
 import Section from '../components/section.js';
 import Skills from '../components/skills.js';
@@ -59,6 +60,12 @@ class Home extends React.Component{
 
     return(
       <div>
+        <Helmet>
+          <title>Owen G. Bean</title>
+          <meta name="description" content="Owen Bean is a front end developer from Maine. He mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS.
+                                            He creates elegant websites with screen respondsive and has the ability to be scaled up."></meta>
+          <meta charset="UTF-8"></meta>
+        </Helmet>
         <Navbar />
         <main className="index-main">
           <div className="header-container">
@@ -85,11 +92,11 @@ class Home extends React.Component{
           <Section header="Programs" actionName="My Skills">
             <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0'}}>
               <Skills image={HTMLLogo} altImg="HTML Logo" name="Hypertext Markup Language" iconLink="https://developer.mozilla.org/en-US/docs/Web/HTML"/>
-              <Skills image={CSSLogo} altImg="HTML Logo" name="Cascading Style Sheets" iconLink="https://www.w3.org/Style/CSS/Overview.en.html"/>
-              <Skills image={JSLogo} altImg="HTML Logo" name="Javascript" iconLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
-              <Skills image={SassLogo} altImg="HTML Logo" name="Syntactically Awesome Style Sheet" iconLink="https://sass-lang.com/"/>
-              <Skills image={ReactLogo} altImg="HTML Logo" name="React JS" iconLink="https://reactjs.org/"/>
-              <Skills image={GatsbyLogo} altImg="HTML Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
+              <Skills image={CSSLogo} altImg="CSS Logo" name="Cascading Style Sheets" iconLink="https://www.w3.org/Style/CSS/Overview.en.html"/>
+              <Skills image={JSLogo} altImg="Javascript Logo" name="Javascript" iconLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
+              <Skills image={SassLogo} altImg="Sass Logo" name="Syntactically Awesome Style Sheet" iconLink="https://sass-lang.com/"/>
+              <Skills image={ReactLogo} altImg="React JS Logo" name="React JS" iconLink="https://reactjs.org/"/>
+              <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
             </FlexShow>
           </Section>
           <Section header="Portfolio" actionName="Portfolio">

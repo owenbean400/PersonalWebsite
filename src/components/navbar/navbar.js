@@ -5,7 +5,7 @@ import Sidebar from './sidebar.js';
 import './navbar.scss';
 
 const LINKS = {
-    portfolio: ['Portfolio', 'Code'],
+    portfolio: ['Portfolio', 'Code', 'Graphics'],
     explore: ['Explore', 'Games', 'Blog', 'React UI'],
     me: ['Me','About', 'Contact'],
 }
