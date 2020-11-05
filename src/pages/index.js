@@ -66,7 +66,7 @@ class Home extends React.Component{
               <h1 className="title">Owen G. Bean</h1>
               <h3 className="subtitle">Front End Developer</h3>
               <h5 className="abouttitle">aka code the visuals of websites</h5>
-              <StationaryButton css={{marginTop: '12px'}} title="Contact Me"/>
+              <StationaryButton css={{marginTop: '20px'}} title="Contact Me"/>
             </div>
             <img className="owenbean-img" src={OwenBean}/>
           </div>

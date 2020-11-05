@@ -52,7 +52,8 @@ class SideButton extends React.Component{
                 border: '0',
                 transition: 'color 0.5s',
                 cursor: 'pointer',
-                fontSize: '18px'
+                fontSize: '18px',
+                fontFamily: '"Nunito", sans-serif',
             },
             circle: {
                 width: (this.state.hovering || this.state.isPhone) ? '230px' : '60px',
