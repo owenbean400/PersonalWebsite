@@ -1,0 +1,79 @@
+$primarydarkcolor: #151035;
+$phonesize: 786px;
+
+footer {
+  width: 100%;
+  background-color: $primarydarkcolor;
+  position: relative;
+  bottom: 0;
+  color: white;
+  padding: 3rem 0 0.25rem 0;
+  clear: both;
+
+  .social-media-holder {
+    margin: auto;
+    display: none;
+    justify-content: space-between;
+    @media screen and (min-width: $phonesize) {
+      width: 500px;
+      margin-bottom: 4rem;
+    }
+    @media screen and (max-width: $phonesize) {
+      width: 300px;
+      margin-bottom: 2rem;
+    }
+
+    .fa {
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      color: white;
+      @media screen and (min-width: $phonesize) {
+        font-size: 50px;
+        width: 50px;
+      }
+      @media screen and (max-width: $phonesize) {
+        font-size: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .links-container {
+    display: grid;
+    @media screen and (min-width: $phonesize) {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      justify-content: space-around;
+    }
+    @media screen and (max-width: $phonesize) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+
+      li {
+        padding: 0.5rem 0;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline dashed;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+    @media screen and (max-width: $phonesize) {
+      text-align: center;
+    }
+    @media screen and (min-width: $phonesize) {
+      margin-left: 0.5rem;
+    }
+  }
+}
