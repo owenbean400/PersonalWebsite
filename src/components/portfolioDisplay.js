@@ -70,6 +70,7 @@ class PortfolioDisplay extends React.Component{
             <div style={{...STYLE.box1}} onMouseOver={this.toggleOn} onMouseLeave={this.toggleOff}>
                 <div style={{...STYLE.box2}}>
                 <h5 style={{...STYLE.title}}>{this.props.title}</h5>
+                {this.props.children}
                 </div>
             </div>
         )

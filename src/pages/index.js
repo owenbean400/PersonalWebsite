@@ -9,6 +9,7 @@ import PortfolioDisplay from '../components/portfolioDisplay.js';
 import Footer from '../components/footer/footer.js';
 import OwenBean from '../images/owenbean.png';
 import ComputerImg from '../images/computerHeader.jpg';
+import PortfolioButton from '../components/portfolioButtonContain';
 import '../pageScss/index.scss';
 
 import CodeIcon from '../images/expert/code.svg';
@@ -107,10 +108,34 @@ class Home extends React.Component{
           </div>
           <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
             <FlexShow css={STYLE}>
-              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage"/>
-              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website"/>
-              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website"/>
-              <PortfolioDisplay image={PortfolioPort} title="My Portfolio"/>
+              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage">
+                <PortfolioButton>
+                  <StationaryButton title="URL"/>
+                  <StationaryButton title="GitHub"/>
+                  <StationaryButton title="More"/>
+                </PortfolioButton>
+              </PortfolioDisplay>
+              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website">
+                <PortfolioButton>
+                  <StationaryButton title="URL"/>
+                  <StationaryButton title="GitHub"/>
+                  <StationaryButton title="More"/>
+                </PortfolioButton>
+              </PortfolioDisplay>
+              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
+                <PortfolioButton>
+                  <StationaryButton title="URL"/>
+                  <StationaryButton title="GitHub"/>
+                  <StationaryButton title="More"/>
+                </PortfolioButton>
+              </PortfolioDisplay>
+              <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
+                <PortfolioButton>
+                  <StationaryButton title="URL"/>
+                  <StationaryButton title="GitHub"/>
+                  <StationaryButton title="More"/>
+                </PortfolioButton>
+              </PortfolioDisplay>
             </FlexShow>
           </Section>
           <Section header="Programs" actionName="My Skills" link="/about">
