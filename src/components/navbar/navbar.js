@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Navlinks from './navlinks.js';
 import Hamburger from './hamburger.js';
 import Sidebar from './sidebar.js';
@@ -49,7 +50,7 @@ class Navbar extends React.Component{
         return(
             <div>
                 <nav>
-                    <h1>Owen Bean</h1>
+                    <h1><Link to="/">Owen Bean</Link></h1>
                     <div className="spacer"></div>
                     {navLinksHTML}
                     <Hamburger clickMe={this.showSide}/>

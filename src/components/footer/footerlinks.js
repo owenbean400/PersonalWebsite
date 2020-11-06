@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 class FooterLinks extends React.Component{
 
     render(){
 
         const LINKS = this.props.footerlinks.map((string) => 
-        <li style={{color: 'white'}}>{string}</li>
+        <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li style={{color: 'white'}}>{string}</li></Link>
     );
 
         return(

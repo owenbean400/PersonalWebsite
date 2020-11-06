@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import './navbar.js';
 
 class Navlinks extends React.Component{
@@ -36,8 +37,8 @@ class Navlinks extends React.Component{
             <div>
                 <ul onMouseOver={this.showLinks} onMouseLeave={this.hideLinks} style={this.state.css} className="nav-links-container">
                     {this.props.links.map((string) => 
-                        <li>{string}</li>
-                    )}
+                        <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li>{string}</li></Link>
+                    )};
                 </ul>
             </div>
         )
