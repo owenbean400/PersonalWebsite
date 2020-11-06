@@ -148,6 +148,11 @@ class Home extends React.Component{
               <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
             </FlexShow>
           </Section>
+          <div className="action-container">
+            <StationaryButton title="Portfolio" link="/portfolio"/>
+            <StationaryButton title="About" link="/about"/>
+            <StationaryButton title="Contact" link="/contact"/>
+          </div>
         </main>
         <Footer />
       </div>

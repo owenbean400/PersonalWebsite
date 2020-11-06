@@ -21,7 +21,7 @@ class PortfolioDisplay extends React.Component{
 
     toggleOn(){
         this.setState({
-            opacity: 0.95,
+            opacity: 0.97,
         })
     }
 
