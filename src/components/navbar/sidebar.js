@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 class Sidebar extends React.Component{
 
@@ -6,7 +7,7 @@ class Sidebar extends React.Component{
 
     render(){
         const LINKS = this.props.sidelinks.map((string) => 
-            <li style={{color: 'white'}}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</li>
+            <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li style={{color: 'white'}}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</li></Link>
         );
 
         return(
