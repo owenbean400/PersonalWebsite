@@ -1,5 +1,6 @@
 $primarydarkcolor: #151035;
 $phonesize: 786px;
+$fontfamily: "Nunito", sans-serif;
 
 footer {
   width: 100%;
@@ -9,6 +10,12 @@ footer {
   color: white;
   padding: 3rem 0 0.25rem 0;
   clear: both;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: $fontfamily;
+  }
 
   .social-media-holder {
     margin: auto;

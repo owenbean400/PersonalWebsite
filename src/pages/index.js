@@ -11,6 +11,10 @@ import OwenBean from '../images/owenbean.png';
 import ComputerImg from '../images/computerHeader.jpg';
 import '../pageScss/index.scss';
 
+import CodeIcon from '../images/expert/code.svg';
+import ArtIcon from '../images/expert/art.svg';
+import RespondsiveIcon from '../images/expert/respondsive.svg';
+
 import HTMLLogo from '../images/skills/HTML5_Logo.png';
 import CSSLogo from '../images/skills/CSS3_logo.png';
 import JSLogo from '../images/skills/js.png';
@@ -74,12 +78,20 @@ class Home extends React.Component{
         <main className="index-main">
           <div className="header-container">
             <div className="title-container">
-              <h1 className="title">Owen G. Bean</h1>
-              <h3 className="subtitle">Front End Developer</h3>
-              <h5 className="abouttitle">aka code the visuals of websites</h5>
-              <StationaryButton css={{marginTop: '20px'}} title="Contact Me" link="/contact"/>
+              <h3 className="subtitle">Owen G. Bean</h3>
+              <h1 className="title">Front End Developer</h1>
+              <h5 className="abouttitle">I am a front end developer in Maine</h5>
+              <FlexShow css={{justifyContent: 'space-between'}}>
+                <StationaryButton css={{marginTop: '20px'}} title="Portfolio" link="/portfolio"/>
+                <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>
+              </FlexShow>
             </div>
             <img className="owenbean-img" src={OwenBean}/>
+          </div>
+          <div className="expert-container">
+              <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>
+              <div className="expert"><img src={RespondsiveIcon} alt="code icon"/><p className="export-text">Respondsive Design</p></div>
+              <div className="expert"><img src={ArtIcon} alt="code icon"/><p className="export-text">Creative Design</p></div>
           </div>
           <div className="market-container">
             <img src={ComputerImg} className="market-image" alt="computer"/>
@@ -93,6 +105,14 @@ class Home extends React.Component{
               </ul>
             </div>
           </div>
+          <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
+            <FlexShow css={STYLE}>
+              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage"/>
+              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website"/>
+              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website"/>
+              <PortfolioDisplay image={PortfolioPort} title="My Portfolio"/>
+            </FlexShow>
+          </Section>
           <Section header="Programs" actionName="My Skills" link="/about">
             <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0'}}>
               <Skills image={HTMLLogo} altImg="HTML Logo" name="Hypertext Markup Language" iconLink="https://developer.mozilla.org/en-US/docs/Web/HTML"/>
@@ -101,14 +121,6 @@ class Home extends React.Component{
               <Skills image={SassLogo} altImg="Sass Logo" name="Syntactically Awesome Style Sheet" iconLink="https://sass-lang.com/"/>
               <Skills image={ReactLogo} altImg="React JS Logo" name="React JS" iconLink="https://reactjs.org/"/>
               <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
-            </FlexShow>
-          </Section>
-          <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
-            <FlexShow css={STYLE}>
-              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage"/>
-              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website"/>
-              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website"/>
-              <PortfolioDisplay image={PortfolioPort} title="My Portfolio"/>
             </FlexShow>
           </Section>
         </main>
