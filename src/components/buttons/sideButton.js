@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 class SideButton extends React.Component{
     constructor() {
@@ -67,14 +68,21 @@ class SideButton extends React.Component{
                 zIndex: '-1',
             }
         }
-        return(
-            <div style={STYLE.container}>
-                <a style={STYLE.a}>
-                    <button style={STYLE.button} onMouseOver={this.hover} onMouseLeave={this.leave}>{this.props.title}</button>
-                    <div style={STYLE.circle}></div>
-                </a>
-            </div>
-        )
+        if(this.props.title != null){
+            return(
+                <div style={STYLE.container}>
+                    <Link style={STYLE.a} to={this.props.link}>
+                        <button style={STYLE.button} onMouseOver={this.hover} onMouseLeave={this.leave}>{this.props.title}</button>
+                        <div style={STYLE.circle}></div>
+                    </Link>
+                </div>
+            )
+        }
+        else{
+            return(
+                <div></div>
+            )
+        }
     }
 }
 

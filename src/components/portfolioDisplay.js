@@ -9,7 +9,8 @@ class PortfolioDisplay extends React.Component{
             opacity: 0,
         }
         this.changeSize = this.changeSize.bind(this);
-        this.toggleInfo = this.toggleInfo.bind(this);
+        this.toggleOn = this.toggleOn.bind(this);
+        this.toggleOff = this.toggleOff.bind(this);
     }
 
     changeSize() {
@@ -18,9 +19,15 @@ class PortfolioDisplay extends React.Component{
         })
     }
 
-    toggleInfo(){
+    toggleOn(){
         this.setState({
-            opacity: (this.state.opacity == 0.9) ? 0 : 0.9,
+            opacity: 0.95,
+        })
+    }
+
+    toggleOff(){
+        this.setState({
+            opacity: 0,
         })
     }
 
@@ -60,7 +67,7 @@ class PortfolioDisplay extends React.Component{
             }
         }
         return(
-            <div style={{...STYLE.box1}} onMouseEnter={this.toggleInfo} onMouseLeave={this.toggleInfo}>
+            <div style={{...STYLE.box1}} onMouseOver={this.toggleOn} onMouseLeave={this.toggleOff}>
                 <div style={{...STYLE.box2}}>
                 <h5 style={{...STYLE.title}}>{this.props.title}</h5>
                 </div>

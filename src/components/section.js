@@ -19,7 +19,7 @@ export default function Section(props){
             <section>
                 <h4 style={{...STYLE.header, ...props.css}}>{props.header}</h4>
                 {props.children}
-                <SideButton title={props.actionName}/>
+                <SideButton title={props.actionName} link={props.link}/>
             </section>
         </div>
     )

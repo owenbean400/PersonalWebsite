@@ -77,7 +77,7 @@ class Home extends React.Component{
               <h1 className="title">Owen G. Bean</h1>
               <h3 className="subtitle">Front End Developer</h3>
               <h5 className="abouttitle">aka code the visuals of websites</h5>
-              <StationaryButton css={{marginTop: '20px'}} title="Contact Me"/>
+              <StationaryButton css={{marginTop: '20px'}} title="Contact Me" link="/contact"/>
             </div>
             <img className="owenbean-img" src={OwenBean}/>
           </div>
@@ -93,7 +93,7 @@ class Home extends React.Component{
               </ul>
             </div>
           </div>
-          <Section header="Programs" actionName="My Skills">
+          <Section header="Programs" actionName="My Skills" link="/about">
             <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0'}}>
               <Skills image={HTMLLogo} altImg="HTML Logo" name="Hypertext Markup Language" iconLink="https://developer.mozilla.org/en-US/docs/Web/HTML"/>
               <Skills image={CSSLogo} altImg="CSS Logo" name="Cascading Style Sheets" iconLink="https://www.w3.org/Style/CSS/Overview.en.html"/>
@@ -103,7 +103,7 @@ class Home extends React.Component{
               <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
             </FlexShow>
           </Section>
-          <Section header="Portfolio" actionName="Portfolio">
+          <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
             <FlexShow css={STYLE}>
               <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage"/>
               <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website"/>
