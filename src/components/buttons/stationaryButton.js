@@ -3,11 +3,22 @@ import { Link } from 'gatsby';
 import './buttons.scss';
 
 export default function StationaryButton(props){
-    return(
-        <div>
-            <Link to={props.link}>
-                <button className="stationary-button" style={props.css}>{props.title}</button>
-            </Link>
-        </div>
-    )
+    if(typeof(props.isNewTab) != "undefined" && props.isNewTab){
+        return(
+            <div>
+                <a href={props.link} target="_blank">
+                    <button className="stationary-button" style={props.css}>{props.title}</button>
+                </a>
+            </div>
+        )
+    }
+    else{
+        return(
+                    <div>
+                        <Link to={props.link}>
+                            <button className="stationary-button" style={props.css}>{props.title}</button>
+                        </Link>
+                    </div>
+                )
+    }
 }
