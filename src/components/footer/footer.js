@@ -15,7 +15,7 @@ class Footer extends React.Component{
                     <div className="links-container">
                     <FooterLinks footerlinks={['Portfolio', 'Websites', 'Graphics']}/>
                     <FooterLinks footerlinks={['Explore','Games','Blog','React UI']}/>
-                    <FooterLinks footerlinks={['Me', 'About', 'Contact']}/>
+                    <FooterLinks footerlinks={['Contact', 'About']}/>
                     </div>
                     <p>Copyright © {DATE.getFullYear()} Owen Bean. All rights reserved.</p>
                 </footer>

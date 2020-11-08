@@ -1,0 +1,45 @@
+$primarydarkcolor: #151035;
+$secondarydarkcolor: #20135c;
+$fontfamily: "Nunito", sans-serif;
+
+.about-container {
+  display: grid;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 400px auto;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .header-img {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.skills-container {
+  display: grid;
+  grid-gap: 32px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 400px auto;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+.resume {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+.hobby-container {
+  padding: 0 32px;
+}

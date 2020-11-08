@@ -8,7 +8,7 @@ import './navbar.scss';
 const LINKS = {
     portfolio: ['Portfolio', 'Websites', 'Graphics'],
     explore: ['Explore', 'Games', 'Blog', 'React UI'],
-    me: ['Me','About', 'Contact'],
+    me: ['Contact', 'About'],
 }
 
 class Navbar extends React.Component{

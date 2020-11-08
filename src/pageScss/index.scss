@@ -10,6 +10,39 @@ body {
   cursor: default;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: $primarydarkcolor #ccc;
+  scrollbar-face-color: $primarydarkcolor;
+  scrollbar-shadow-color: #ccc;
+  scrollbar-highlight-color: $primarydarkcolor;
+}
+
+.container {
+  scrollbar-color: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primarydarkcolor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondarydarkcolor;
+}
+
 .index-main {
   margin: 64px 0 0 0;
 

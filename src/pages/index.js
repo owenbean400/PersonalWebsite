@@ -64,7 +64,7 @@ class Home extends React.Component{
     }
 
     return(
-      <div>
+      <div className="container">
         <Helmet>
           <title>Owen G. Bean</title>
           <meta name="author" content="Owen G. Bean"></meta>
