@@ -7,7 +7,7 @@ export default function StationaryButton(props){
         return(
             <div>
                 <a href={props.link} target="_blank">
-                    <button className="stationary-button" style={props.css}>{props.title}</button>
+                    <button className="stationary-button" style={props.css} type={(typeof(props.buttonType) != "undefined") ? props.buttonType : "button"}>{props.title}</button>
                 </a>
             </div>
         )
