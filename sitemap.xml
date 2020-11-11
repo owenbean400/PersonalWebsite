@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://owengbean.com/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/explore/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/games/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/graphics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/portfolio/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://owengbean.com/websites/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://owengbean.com/about/</loc> <lastmod>2020-11-11</lastmod> <changefreq>yearly</changefreq> <priority>0.9</priority> </url>
+<url> <loc>https://owengbean.com/contact/</loc> <lastmod>2020-11-11</lastmod> <changefreq>yearly</changefreq> <priority>0.8</priority> </url>
+<url> <loc>https://owengbean.com/explore/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://owengbean.com/games/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>0.4</priority> </url>
+<url> <loc>https://owengbean.com/graphics/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://owengbean.com/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://owengbean.com/portfolio/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://owengbean.com/websites/</loc> <lastmod>2020-11-11</lastmod> <changefreq>monthly</changefreq> <priority>0.7</priority> </url>
 </urlset>
