@@ -12,8 +12,6 @@ import PortfolioButton from '../components/portfolioButtonContain.js';
 
 import Meta from '../components/meta';
 
-const amountOfRows = 1;
-
 const STYLE = {
     main: {
         margin: '48px 0 64px 0',
@@ -66,12 +64,6 @@ class Explore extends React.Component{
                                 </PortfolioButton>
                             </PortfolioDisplay>
                         </FlexShow>
-                    </Section>
-                    <Section header="Blog Posts" actionName="More Blogs" link="/blog">
-
-                    </Section>
-                    <Section header="React Components" actionName="View More" link="/reactui">
-
                     </Section>
                 </main>
                 <Footer />

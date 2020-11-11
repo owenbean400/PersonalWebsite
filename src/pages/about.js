@@ -70,7 +70,7 @@ class About extends React.Component{
                     </Section>
                     <Section header="Resume">
                         <div>
-                            <iframe className="resume" src={Resume}></iframe>
+                            <iframe className="resume" src={Resume} title="Owen Bean Resume"></iframe>
                         </div>
                     </Section>
                     <Section header="Education">

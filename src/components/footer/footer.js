@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterLinks from './footerlinks';
+import StationaryButton from '../buttons/stationaryButton';
 import './footer.scss'
 
 const DATE = new Date();
@@ -11,6 +12,11 @@ class Footer extends React.Component{
 
         return(
             <div>
+                <div className="action-container">
+                    <StationaryButton title="Portfolio" link="/portfolio"/>
+                    <StationaryButton title="About" link="/about"/>
+                    <StationaryButton title="Contact" link="/contact"/>
+                </div>
                 <footer>
                     <div className="links-container">
                     <FooterLinks footerlinks={['Portfolio', 'Websites', 'Graphics']}/>

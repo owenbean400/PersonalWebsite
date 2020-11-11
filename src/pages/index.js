@@ -1,5 +1,4 @@
-import React, { Children } from "react";
-import {Helmet} from "react-helmet";
+import React from "react";
 import Navbar from '../components/navbar/navbar.js';
 import Section from '../components/section.js';
 import Skills from '../components/skills.js';
@@ -28,8 +27,6 @@ import ReliableBoardPort from '../images/portfolio/reliable_board_display.jpg';
 import HereTheScoopPort from '../images/portfolio/here_the_scoop_display.jpg';
 import BeanJuicePort from '../images/portfolio/bean_juice_display.jpg';
 import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
-
-const AMOUNT_ROWS_PORTFOLIO = 1;
 
 class Home extends React.Component{
   constructor() {
@@ -83,7 +80,7 @@ class Home extends React.Component{
                 <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>
               </FlexShow>
             </div>
-            <img className="owenbean-img" src={OwenBean}/>
+            <img className="owenbean-img" src={OwenBean} alt="Owen G. Bean"/>
           </div>
           <div className="expert-container">
               <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>
@@ -114,14 +111,14 @@ class Home extends React.Component{
               </PortfolioDisplay>
               <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
                 <PortfolioButton>
-                  <StationaryButton title="URL" link="https://github.com/owenbean400/beanjuicewebheader" isNewTab={true}/>
-                  <StationaryButton title="GitHub" link="https://owenbean400.github.io/beanjuicewebheader/" isNewTab={true}/>
+                  <StationaryButton title="URL" link="https://owenbean400.github.io/beanjuicewebheader/" isNewTab={true}/>
+                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/beanjuicewebheader" isNewTab={true}/>
                 </PortfolioButton>
               </PortfolioDisplay>
               <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
                 <PortfolioButton>
-                  <StationaryButton title="URL" link="https://github.com/owenbean400/webfolio" isNewTab={true}/>
-                  <StationaryButton title="GitHub" link="https://owenbean400.github.io/webfolio/" isNewTab={true}/>
+                  <StationaryButton title="URL" link="https://owenbean400.github.io/webfolio/" isNewTab={true}/>
+                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/webfolio" isNewTab={true}/>
                 </PortfolioButton>
               </PortfolioDisplay>
             </FlexShow>
@@ -136,11 +133,6 @@ class Home extends React.Component{
               <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
             </FlexShow>
           </Section>
-          <div className="action-container">
-            <StationaryButton title="Portfolio" link="/portfolio"/>
-            <StationaryButton title="About" link="/about"/>
-            <StationaryButton title="Contact" link="/contact"/>
-          </div>
         </main>
         <Footer />
       </div>
