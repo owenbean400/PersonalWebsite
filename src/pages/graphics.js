@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from '../components/navbar/navbar.js';
 import Footer from '../components/footer/footer.js';
+import Meta from '../components/meta';
 
 import Section from '../components/section.js';
 import FlexShow from '../components/flexShow.js';
@@ -63,6 +64,10 @@ class Graphics extends React.Component{
 
         return(
             <div>
+                <Meta 
+                    title="Graphic Design Portfolio"
+                    desc="I know how to use Photoshop CC and Illustrator CC from my graphic design"
+                />
                 <Navbar />
                 <main style={STYLE.main}>
                     <Section header="Graphic Design Portfolio">

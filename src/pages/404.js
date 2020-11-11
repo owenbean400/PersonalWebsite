@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/navbar/navbar.js';
 import Footer from '../components/footer/footer.js';
+import Meta from '../components/meta';
 
 const STYLE = {
     main: {
@@ -15,6 +16,10 @@ class NotFoundPage extends React.Component{
     render(){
         return(
             <div>
+                <Meta 
+                    title="404"
+                    desc="Owen G. Bean 404 Page"
+                />
                 <Navbar />
                 <main style={STYLE.main}>
                     Sorry this web page url doesn't work. <br/>

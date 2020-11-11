@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from '../components/navbar/navbar.js';
 import Footer from '../components/footer/footer.js';
+import Meta from '../components/meta';
 
 import Section from '../components/section.js';
 import FlexShow from '../components/flexShow.js';
@@ -60,6 +61,10 @@ class Portfolio extends React.Component{
 
         return(
             <div>
+                <Meta 
+                    title="Portfolio"
+                    desc="My portfolio of front end development and graphic designs"
+                />
                 <Navbar />
                 <main style={STYLE.main}>
                     <Section header="Website Portfolio" actionName="More Websites" link="/websites">

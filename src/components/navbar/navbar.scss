@@ -1,6 +1,4 @@
-$primarydarkcolor: #151035;
-$secondarydarkcolor: #20135c;
-$fontfamily: "Nunito", sans-serif;
+@import "../../pageScss/variable.scss";
 
 nav {
   font-family: $fontfamily;

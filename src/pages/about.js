@@ -4,6 +4,7 @@ import Footer from '../components/footer/footer';
 import Navbar from '../components/navbar/navbar';
 import Section from '../components/section';
 import SkillBar from '../components/skillbar';
+import Meta from '../components/meta';
 
 import OwenBean from '../images/owenbean.png';
 
@@ -35,6 +36,13 @@ class About extends React.Component{
     render(){
         return(
             <div>
+                <Meta 
+                    title="About Me"
+                    desc=">I am a front end web developer from Maine. I specialize with the React JS framework to create
+                                ui and implement these ui in website development. I have developed my own UI and wireframe design
+                                and from a prototype. Addtionally, I done Graphic Design for several at CATC, and understand
+                                graphic design fundaments."
+                />
                 <Navbar />
                 <main style={STYLE.main}>
                     <div className="about-container">

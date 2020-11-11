@@ -9,12 +9,17 @@ import StationaryButton from '../components/buttons/stationaryButton';
 import GmailLogo from '../images/skills/gmail.png';
 import LinkinLogo from '../images/skills/linkin.png';
 import FlexShow from '../components/flexShow';
+import Meta from '../components/meta';
 
 class Contact extends React.Component{
 
     render(){
         return(
             <div>
+                <Meta 
+                    title="Contact Me"
+                    desc="Contact Me with email owenbean400@gmail.com or with Linkedin"
+                />
                 <Navbar />
                 <main className="contact-main">
                     <form

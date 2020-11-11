@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import {Helmet} from "react-helmet";
 import Navbar from '../components/navbar/navbar.js';
 import Section from '../components/section.js';
@@ -10,6 +10,7 @@ import Footer from '../components/footer/footer.js';
 import OwenBean from '../images/owenbean.png';
 import ComputerImg from '../images/computerHeader.jpg';
 import PortfolioButton from '../components/portfolioButtonContain';
+import Meta from '../components/meta'
 import '../pageScss/index.scss';
 
 import CodeIcon from '../images/expert/code.svg';
@@ -65,16 +66,11 @@ class Home extends React.Component{
 
     return(
       <div className="container">
-        <Helmet>
-          <title>Owen G. Bean</title>
-          <meta name="author" content="Owen G. Bean"></meta>
-          <meta name="application-name" content="Owen G. Bean"></meta>
-          <meta name="description" content="Owen Bean is a front end developer from Maine. He mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS.
-                                            He creates elegant websites with screen respondsive and has the ability to be scaled up. 
-                                            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator">
-          </meta>
-          <meta charset="UTF-8"></meta>
-        </Helmet>
+        <Meta
+            desc="Owen Bean is a front end developer from Maine. He mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS.
+            He creates elegant websites with screen respondsive and has the ability to be scaled up. 
+            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator"
+        />
         <Navbar />
         <main className="index-main">
           <div className="header-container">
@@ -109,31 +105,23 @@ class Home extends React.Component{
           <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
             <FlexShow css={STYLE}>
               <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage">
-                <PortfolioButton>
-                  <StationaryButton title="URL"/>
-                  <StationaryButton title="GitHub"/>
-                  <StationaryButton title="More"/>
-                </PortfolioButton>
               </PortfolioDisplay>
               <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website">
                 <PortfolioButton>
-                  <StationaryButton title="URL"/>
-                  <StationaryButton title="GitHub"/>
-                  <StationaryButton title="More"/>
+                  <StationaryButton title="URL" link="https://owenbean400.github.io/herethescoop/" isNewTab={true}/>
+                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/herethescoop" isNewTab={true}/>
                 </PortfolioButton>
               </PortfolioDisplay>
               <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
                 <PortfolioButton>
-                  <StationaryButton title="URL"/>
-                  <StationaryButton title="GitHub"/>
-                  <StationaryButton title="More"/>
+                  <StationaryButton title="URL" link="https://github.com/owenbean400/beanjuicewebheader" isNewTab={true}/>
+                  <StationaryButton title="GitHub" link="https://owenbean400.github.io/beanjuicewebheader/" isNewTab={true}/>
                 </PortfolioButton>
               </PortfolioDisplay>
               <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
                 <PortfolioButton>
-                  <StationaryButton title="URL"/>
-                  <StationaryButton title="GitHub"/>
-                  <StationaryButton title="More"/>
+                  <StationaryButton title="URL" link="https://github.com/owenbean400/webfolio" isNewTab={true}/>
+                  <StationaryButton title="GitHub" link="https://owenbean400.github.io/webfolio/" isNewTab={true}/>
                 </PortfolioButton>
               </PortfolioDisplay>
             </FlexShow>

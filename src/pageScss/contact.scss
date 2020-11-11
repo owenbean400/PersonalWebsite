@@ -1,6 +1,4 @@
-$primarydarkcolor: #151035;
-$secondarydarkcolor: #20135c;
-$fontfamily: "Nunito", sans-serif;
+@import "./variable.scss";
 
 .contact-main {
   margin: 100px 0 64px 0;

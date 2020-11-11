@@ -1,14 +1,12 @@
-$primarydarkcolor: #151035;
-$secondarydarkcolor: #20135c;
-$fontfamily: "Nunito", sans-serif;
+@import "./variable.scss";
 
 .about-container {
   display: grid;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $phonesize) {
     grid-template-columns: 400px auto;
     justify-content: space-evenly;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $phonesize) {
     grid-template-columns: auto;
     justify-content: center;
     padding: 0 32px;
@@ -21,10 +19,10 @@ $fontfamily: "Nunito", sans-serif;
   }
 
   h1 {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $phonesize) {
       text-align: left;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $phonesize) {
       text-align: center;
     }
   }
@@ -48,11 +46,11 @@ $fontfamily: "Nunito", sans-serif;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
   }
-  @media screen and (min-width: 768px) and (max-width: 1080px) {
+  @media screen and (min-width: $phonesize) and (max-width: 1080px) {
     grid-template-columns: auto auto;
     justify-content: space-evenly;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $phonesize) {
     grid-template-columns: auto;
     justify-content: center;
   }
@@ -68,12 +66,12 @@ $fontfamily: "Nunito", sans-serif;
 .education-container {
   display: grid;
   grid-gap: 16px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $phonesize) {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     justify-content: space-evenly;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $phonesize) {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     justify-content: center;

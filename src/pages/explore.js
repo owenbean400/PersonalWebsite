@@ -10,6 +10,8 @@ import PortfolioDisplay from '../components/portfolioDisplay';
 import StationaryButton from '../components/buttons/stationaryButton';
 import PortfolioButton from '../components/portfolioButtonContain.js';
 
+import Meta from '../components/meta';
+
 const amountOfRows = 1;
 
 const STYLE = {
@@ -48,6 +50,11 @@ class Explore extends React.Component{
     render(){
         return(
             <div>
+                <Meta 
+                    title="Explore"
+                    desc="Explore different fun thinfs Owen Bean has created.
+                        This includes games, blog, and some React UI Components"
+                />
                 <Navbar />
                 <main style={STYLE.main}>
                     <Section header="JS Web Games" actionName="Play Games" link="/games">
