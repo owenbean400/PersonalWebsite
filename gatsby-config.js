@@ -11,6 +11,12 @@ module.exports = {
   },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`,
   {
+    resolve: `gatsby-plugin-html-attributes`,
+    options: {
+      lang: 'en'
+    }
+  },
+  {
     resolve: `gatsby-plugin-sitemap`,
     options: {
       exclude: [`/404`],

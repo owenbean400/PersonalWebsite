@@ -41,7 +41,7 @@ nav {
       display: none;
     }
 
-    li {
+    .nav-link {
       height: 64px;
       padding: 0 1.5rem;
       color: white;
@@ -127,10 +127,14 @@ nav {
       text-align: center;
       color: white;
       list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
 
-      li {
-        font-size: 1.5rem;
+      .nav-side-link {
+        font-size: 36px;
         padding: 1rem 0;
+        display: block;
       }
     }
   }

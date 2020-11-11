@@ -72,9 +72,9 @@ class Home extends React.Component{
         <main className="index-main">
           <div className="header-container">
             <div className="title-container">
-              <h3 className="subtitle">Owen G. Bean</h3>
-              <h1 className="title">Front End Developer</h1>
-              <h5 className="abouttitle">I am a front end developer in Maine</h5>
+              <h1 className="subtitle">Owen G. Bean</h1>
+              <h2 className="title">Front End Developer</h2>
+              <h3 className="abouttitle">I am a front end developer in Maine</h3>
               <FlexShow css={{justifyContent: 'space-between'}}>
                 <StationaryButton css={{marginTop: '20px'}} title="Portfolio" link="/portfolio"/>
                 <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>

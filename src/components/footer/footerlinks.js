@@ -6,14 +6,14 @@ class FooterLinks extends React.Component{
     render(){
 
         const LINKS = this.props.footerlinks.map((string) => 
-        <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li style={{color: 'white'}}>{string}</li></Link>
+        <Link className="footer-link" style={{color: 'white'}} to={`/${string.toLowerCase().replace(/\s/g, '')}`}>{string}</Link>
     );
 
         return(
             <div>
-                <ul className="footer-links-container">
+                <div className="footer-links-container">
                     {LINKS}
-                </ul>
+                </div>
             </div>
         )
     }

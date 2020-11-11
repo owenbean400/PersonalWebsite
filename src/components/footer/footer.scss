@@ -79,12 +79,15 @@ footer {
       grid-template-rows: auto auto auto;
     }
 
-    ul {
+    .footer-links-container {
       padding: 0;
       list-style-type: none;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
 
-      li {
+      .footer-link {
         padding: 0.5rem 0;
         cursor: pointer;
         &:hover {

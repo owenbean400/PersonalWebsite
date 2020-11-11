@@ -7,7 +7,7 @@ class Sidebar extends React.Component{
 
     render(){
         const LINKS = this.props.sidelinks.map((string) => 
-            <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li style={{color: 'white'}}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</li></Link>
+            <Link className="nav-side-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`} style={{color: 'white'}}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</Link>
         );
 
         return(
@@ -20,9 +20,9 @@ class Sidebar extends React.Component{
                         <div className="x-bar-right"></div>
                     </div>
                 </div>
-                <ul className='sidebar-links-container' onClick={this.props.clickHide}>
+                <div className='sidebar-links-container' onClick={this.props.clickHide}>
                     {LINKS}
-                </ul>
+                </div>
             </div>
         )
     }

@@ -35,11 +35,11 @@ class Navlinks extends React.Component{
 
         return(
             <div>
-                <ul onMouseOver={this.showLinks} onMouseLeave={this.hideLinks} style={this.state.css} className="nav-links-container">
+                <div onMouseOver={this.showLinks} onMouseLeave={this.hideLinks} style={this.state.css} className="nav-links-container">
                     {this.props.links.map((string) => 
-                        <Link to={`/${string.toLowerCase().replace(/\s/g, '')}`}><li>{string}</li></Link>
+                        <Link className="nav-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`}>{string}</Link>
                     )};
-                </ul>
+                </div>
             </div>
         )
     }

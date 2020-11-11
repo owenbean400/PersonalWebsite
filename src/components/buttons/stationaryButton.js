@@ -6,7 +6,7 @@ export default function StationaryButton(props){
     if(typeof(props.isNewTab) != "undefined" && props.isNewTab){
         return(
             <div>
-                <a href={props.link} target="_blank">
+                <a href={props.link} target="_blank" rel="noreferrer">
                     <button className="stationary-button" style={props.css} type={(typeof(props.buttonType) != "undefined") ? props.buttonType : "button"}>{props.title}</button>
                 </a>
             </div>
