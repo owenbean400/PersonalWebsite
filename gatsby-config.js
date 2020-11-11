@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`],
+  siteMetadata: {
+    siteUrl: 'https://owengbean.com'
+  },
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`, `gatsby-plugin-sitemap`],
   pathPrefix: "",
 }
