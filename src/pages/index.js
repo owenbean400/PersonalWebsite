@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from '../components/navbar/navbar.js';
 import Section from '../components/section.js';
 import Skills from '../components/skills.js';
@@ -46,7 +47,7 @@ class Home extends React.Component{
   updatePortfolioContainer() {
     if (typeof window !== `undefined`){
       this.setState({
-            height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
+            height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 500) ? 50 : 100,
       })
     }
   }
@@ -80,7 +81,7 @@ class Home extends React.Component{
                 <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>
               </FlexShow>
             </div>
-            <img className="owenbean-img" src={OwenBean} alt="Owen G. Bean"/>
+            <img className="owenbean-img lazyload" src={OwenBean} alt="Owen G. Bean" width="300px" />
           </div>
           <div className="expert-container">
               <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>

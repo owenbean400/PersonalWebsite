@@ -37,7 +37,7 @@ class Navlinks extends React.Component{
             <div>
                 <div onMouseOver={this.showLinks} onMouseLeave={this.hideLinks} style={this.state.css} className="nav-links-container">
                     {this.props.links.map((string) => 
-                        <Link className="nav-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`}>{string}</Link>
+                        <Link className="nav-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`} key={string}>{string}</Link>
                     )};
                 </div>
             </div>

@@ -95,7 +95,7 @@ html {
       }
       .abouttitle {
         font-size: 18px;
-        font-weight: 200;
+        font-weight: 300;
         margin: 0;
       }
     }
@@ -211,28 +211,6 @@ html {
     .section-title {
       margin: 0;
       text-align: center;
-    }
-  }
-
-  .action-container {
-    background: rgb(255, 255, 255);
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(212, 212, 212, 1) 50%,
-      rgba(237, 237, 237, 1) 100%
-    );
-    padding: 32px 0;
-    margin: 128px 0 0 0;
-    display: grid;
-    grid-gap: 12px;
-    @media screen and (min-width: $phonesize) {
-      grid-template-columns: auto auto auto;
-      justify-content: space-around;
-    }
-    @media screen and (max-width: $phonesize) {
-      grid-template-columns: auto;
-      justify-content: center;
     }
   }
 }

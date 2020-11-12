@@ -15,7 +15,7 @@ class PortfolioDisplay extends React.Component{
 
     changeSize() {
         this.setState({
-            backgroundImageSize: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
+            backgroundImageSize: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 500) ? 50 : 100,
         })
     }
 

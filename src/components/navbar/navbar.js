@@ -43,7 +43,7 @@ class Navbar extends React.Component{
         var navLinksHTML = [];
         for(let i = 0; i < Object.keys(LINKS).length; i++){
             navLinksHTML.push(
-                <Navlinks className="nav-links-container" links={LINKS[Object.keys(LINKS)[i]]}/>
+                <Navlinks className="nav-links-container" links={LINKS[Object.keys(LINKS)[i]]} key={LINKS[Object.keys(LINKS)[i]]}/>
             )
         }
 

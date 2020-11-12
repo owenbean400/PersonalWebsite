@@ -47,7 +47,7 @@ class Graphics extends React.Component{
     updatePortfolioContainer() {
         if (typeof window !== `undefined`){
         this.setState({
-                height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 768) ? 50 : 100,
+                height: (window.innerWidth > 1200) ? 25 : (window.innerWidth > 960) ? 33.33 : (window.innerWidth > 500) ? 50 : 100,
         })
         }
     }

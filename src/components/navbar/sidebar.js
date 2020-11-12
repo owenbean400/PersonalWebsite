@@ -7,7 +7,7 @@ class Sidebar extends React.Component{
 
     render(){
         const LINKS = this.props.sidelinks.map((string) => 
-            <Link className="nav-side-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`} style={{color: 'white'}}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</Link>
+            <Link className="nav-side-link" to={`/${string.toLowerCase().replace(/\s/g, '')}`} style={{color: 'white'}} key={string}>{string.charAt(0).toUpperCase() + string.substring(1, string.length)}</Link>
         );
 
         return(
