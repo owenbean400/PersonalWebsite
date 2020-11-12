@@ -11,6 +11,15 @@ module.exports = {
   },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-react-helmet`,
   {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images`,
+    }
+  },
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
+  {
     resolve: `gatsby-plugin-sitemap`,
     options: {
       exclude: [`/404`],

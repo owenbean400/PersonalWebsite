@@ -6,8 +6,6 @@ import Section from '../components/section';
 import SkillBar from '../components/skillbar';
 import Meta from '../components/meta';
 
-import OwenBean from '../images/owenbean.png';
-
 import HTMLLogo from '../images/skills/HTML5_Logo.png';
 import CSSLogo from '../images/skills/CSS3_logo.png';
 import JSLogo from '../images/skills/js.png';
@@ -20,6 +18,7 @@ import CATCLogo from '../images/schools/catc.png';
 import SMCCLogo from '../images/schools/smcc.png';
 
 import Resume from '../images/resume/owen_bean_resume.pdf';
+import OwenBeanImage from '../components/imageFixed/owenBeanImage';
 
 
 import '../pageScss/about.scss';
@@ -56,7 +55,7 @@ class About extends React.Component{
                                 or to chat.
                             </p>
                         </div>
-                        <img className="header-img" src={OwenBean} alt="Owen G. Bean" />
+                        <OwenBeanImage />
                     </div>
                     <Section header="Skills">
                         <div className="skills-container">

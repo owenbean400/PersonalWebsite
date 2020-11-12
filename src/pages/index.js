@@ -28,6 +28,8 @@ import ReliableBoardPort from '../images/portfolio/reliable_board_display.jpg';
 import HereTheScoopPort from '../images/portfolio/here_the_scoop_display.jpg';
 import BeanJuicePort from '../images/portfolio/bean_juice_display.jpg';
 import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
+import PropTypes from 'prop-types';
+import OwenBeanImage from '../components/imageFixed/owenBeanImage';
 
 class Home extends React.Component{
   constructor() {
@@ -81,7 +83,7 @@ class Home extends React.Component{
                 <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>
               </FlexShow>
             </div>
-            <img className="owenbean-img lazyload" src={OwenBean} alt="Owen G. Bean" width="300px" />
+            <OwenBeanImage />
           </div>
           <div className="expert-container">
               <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>
@@ -140,5 +142,9 @@ class Home extends React.Component{
     )
   }
 }
+
+Home.propTypes = {
+  data: PropTypes.object,
+};
 
 export default Home
