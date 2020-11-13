@@ -23,7 +23,7 @@ const OwenBeanImage = ({data}, source) => (
                 }
             `}
             render={data => (
-                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean" durationFadeIn={100}/>
+                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean" durationFadeIn={500}/>
             )}
         />
     </div>
