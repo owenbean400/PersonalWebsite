@@ -15,7 +15,7 @@ const OwenBeanImage = ({data}, source) => (
                     image: file(relativePath: {eq: "owenbean.png"}) {
                     id
                     childImageSharp {
-                        fixed(width: 300, quality: 100, webpQuality: 100, traceSVG: {color: "#151035", blackOnWhite: true, threshold: 150}) {
+                        fixed(width: 300, quality: 90, traceSVG: {color: "#151035", blackOnWhite: true, threshold: 150}) {
                             ...GatsbyImageSharpFixed_tracedSVG
                         }
                     }
@@ -23,7 +23,7 @@ const OwenBeanImage = ({data}, source) => (
                 }
             `}
             render={data => (
-                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean" durationFadeIn={500}/>
+                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean" durationFadeIn={100}/>
             )}
         />
     </div>

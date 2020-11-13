@@ -53,7 +53,7 @@ class SkillsIcon extends React.Component{
         return(
             <div>
                 <a href={this.props.iconLink} target="_blank" rel="noreferrer">
-                    <img style={STYLE.image} src={this.props.image} alt={this.props.altImg} onMouseOver={this.displayInfoHover} onFocus={this.displayInfoHover} onMouseLeave={this.hideInfoHover}/>
+                    <img height="48px" width="auto" style={STYLE.image} src={this.props.image} alt={this.props.altImg} onMouseOver={this.displayInfoHover} onFocus={this.displayInfoHover} onMouseLeave={this.hideInfoHover}/>
                 </a>
                 <div style={STYLE.infoContainer}>{this.props.name}</div>
             </div>
