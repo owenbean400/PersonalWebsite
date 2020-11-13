@@ -1,5 +1,4 @@
 import React from 'react';
-import StationaryButton from './buttons/stationaryButton.js';
 
 const STYLE = {
     container: {

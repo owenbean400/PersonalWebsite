@@ -60,7 +60,7 @@ class SchoolCard extends React.Component{
                 <ul style={STYLE.accomp}>
                     {Accomplishments}
                 </ul>
-                <a href={this.props.link} target="_blank" style={STYLE.link}>School Link</a>
+                <a href={this.props.link} target="_blank" rel="noreferrer" style={STYLE.link}>School Link</a>
             </div>
         )
     }

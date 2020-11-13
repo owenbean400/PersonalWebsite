@@ -18,7 +18,7 @@ const STYLE = {
 
 export default function Section(props){
     var marginBottom = 0;
-    if(typeof(props.actionName) != "undefined" && props.actionName != ""){
+    if(typeof(props.actionName) != "undefined" && props.actionName !== ""){
         marginBottom = '64px'
     }
     return(

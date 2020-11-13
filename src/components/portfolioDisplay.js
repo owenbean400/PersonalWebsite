@@ -41,6 +41,7 @@ class PortfolioDisplay extends React.Component{
     }
 
     render(){
+        //console.log(element.getBoundingClientRect());
         const STYLE = {
             box1: {
                 width: this.state.backgroundImageSize + '%',

@@ -7,7 +7,6 @@ import FlexShow from '../components/flexShow.js';
 import StationaryButton from '../components/buttons/stationaryButton.js';
 import PortfolioDisplay from '../components/portfolioDisplay.js';
 import Footer from '../components/footer/footer.js';
-import OwenBean from '../images/owenbean.png';
 import ComputerImg from '../images/computerHeader.jpg';
 import PortfolioButton from '../components/portfolioButtonContain';
 import Meta from '../components/meta'
@@ -64,6 +63,49 @@ class Home extends React.Component{
       overflow: 'hidden',
     }
 
+    var portfolioImages = [];
+    if (typeof window !== `undefined`){
+      portfolioImages.push(
+          <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage">
+          </PortfolioDisplay>
+      );
+      if(window.innerWidth >= 480){
+        console.log("480");
+        portfolioImages.push(
+            <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website">
+              <PortfolioButton>
+                <StationaryButton title="URL" link="https://owenbean400.github.io/herethescoop/" isNewTab={true}/>
+                <StationaryButton title="GitHub" link="https://github.com/owenbean400/herethescoop" isNewTab={true}/>
+              </PortfolioButton>
+            </PortfolioDisplay>
+        );
+      }
+      if(window.innerWidth >= 940){
+        console.log("940");
+        portfolioImages.push(
+            <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
+              <PortfolioButton>
+                <StationaryButton title="URL" link="https://owenbean400.github.io/beanjuicewebheader/" isNewTab={true}/>
+                <StationaryButton title="GitHub" link="https://github.com/owenbean400/beanjuicewebheader" isNewTab={true}/>
+              </PortfolioButton>
+            </PortfolioDisplay>
+        );
+      }
+      if(window.innerWidth >= 1180){
+        console.log("max");
+        portfolioImages.push(
+            <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
+              <PortfolioButton>
+                <StationaryButton title="URL" link="https://owenbean400.github.io/webfolio/" isNewTab={true}/>
+                <StationaryButton title="GitHub" link="https://github.com/owenbean400/webfolio" isNewTab={true}/>
+              </PortfolioButton>
+            </PortfolioDisplay>
+        );
+      }
+    };
+
+    console.log(portfolioImages);
+
     return(
       <div className="container">
         <Meta
@@ -103,28 +145,9 @@ class Home extends React.Component{
             </div>
           </div>
           <Section header="Portfolio" actionName="Portfolio" link="/portfolio">
-            <FlexShow css={STYLE}>
-              <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage">
-              </PortfolioDisplay>
-              <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website">
-                <PortfolioButton>
-                  <StationaryButton title="URL" link="https://owenbean400.github.io/herethescoop/" isNewTab={true}/>
-                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/herethescoop" isNewTab={true}/>
-                </PortfolioButton>
-              </PortfolioDisplay>
-              <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
-                <PortfolioButton>
-                  <StationaryButton title="URL" link="https://owenbean400.github.io/beanjuicewebheader/" isNewTab={true}/>
-                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/beanjuicewebheader" isNewTab={true}/>
-                </PortfolioButton>
-              </PortfolioDisplay>
-              <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
-                <PortfolioButton>
-                  <StationaryButton title="URL" link="https://owenbean400.github.io/webfolio/" isNewTab={true}/>
-                  <StationaryButton title="GitHub" link="https://github.com/owenbean400/webfolio" isNewTab={true}/>
-                </PortfolioButton>
-              </PortfolioDisplay>
-            </FlexShow>
+          <FlexShow css={STYLE}>
+            {portfolioImages}
+          </FlexShow>
           </Section>
           <Section header="Programs" actionName="My Skills" link="/about">
             <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0'}}>
