@@ -29,6 +29,7 @@ import BeanJuicePort from '../images/portfolio/bean_juice_display.jpg';
 import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
 import PropTypes from 'prop-types';
 import OwenBeanImage from '../components/imageFixed/owenBeanImage';
+import ComputerHeaderImage from '../components/imageFixed/computerHeader';
 
 class Home extends React.Component{
   constructor() {
@@ -70,7 +71,6 @@ class Home extends React.Component{
           </PortfolioDisplay>
       );
       if(window.innerWidth >= 480){
-        console.log("480");
         portfolioImages.push(
             <PortfolioDisplay image={HereTheScoopPort} title="Here The Scoop Website">
               <PortfolioButton>
@@ -81,7 +81,6 @@ class Home extends React.Component{
         );
       }
       if(window.innerWidth >= 940){
-        console.log("940");
         portfolioImages.push(
             <PortfolioDisplay image={BeanJuicePort} title="Bean Juice Website">
               <PortfolioButton>
@@ -92,7 +91,6 @@ class Home extends React.Component{
         );
       }
       if(window.innerWidth >= 1180){
-        console.log("max");
         portfolioImages.push(
             <PortfolioDisplay image={PortfolioPort} title="My Portfolio">
               <PortfolioButton>
@@ -133,7 +131,10 @@ class Home extends React.Component{
               <div className="expert"><img src={ArtIcon} alt="code icon"/><p className="export-text">Creative Design</p></div>
           </div>
           <div className="market-container">
-            <img src={ComputerImg} className="market-image" alt="computer"/>
+            <div className="market-image-container">
+              <ComputerHeaderImage />
+              {/*<img src={ComputerImg} className="market-image" alt="computer"/> */}
+            </div>
             <div className="market-info-container">
               <h2>Developing Website Front Ends</h2>
               <ul>

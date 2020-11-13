@@ -56,14 +56,14 @@ html {
       rgba(237, 237, 237, 1) 100%
     );
     @media screen and (min-width: $phonesize) {
-      grid-template-columns: auto auto;
+      grid-template-columns: 360px 300px;
       grid-template-rows: auto;
       justify-content: space-evenly;
       padding: 48px 0 60px 0;
     }
     @media screen and (max-width: $phonesize) {
       grid-template-columns: auto;
-      grid-template-rows: auto auto;
+      grid-template-rows: 252.52 343px;
       justify-content: center;
       padding: 12px 0 96px 0;
     }
@@ -165,7 +165,7 @@ html {
       justify-content: center;
     }
 
-    .market-image {
+    .market-image-container {
       display: block;
       margin: 0 auto;
       @media screen and (min-width: $phonesize) {
@@ -173,6 +173,10 @@ html {
       }
       @media screen and (max-width: $phonesize) {
         width: 90%;
+      }
+
+      .market-image {
+        width: 100%;
       }
     }
 
