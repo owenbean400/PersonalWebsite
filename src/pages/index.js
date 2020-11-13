@@ -107,9 +107,10 @@ class Home extends React.Component{
     return(
       <div className="container">
         <Meta
-            desc="Owen Bean is a front end developer from Maine. He mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS.
+            desc="Owen G. Bean is a front end developer from Maine. Owen mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS. 
             He creates elegant websites with screen respondsive and has the ability to be scaled up. 
-            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator"
+            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator. 
+            Feel free to check out Owen G. Bean webpage!"
         />
         <Navbar />
         <main className="index-main">

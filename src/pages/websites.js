@@ -58,7 +58,7 @@ class Websites extends React.Component{
             <div>
                 <Meta 
                     title="Website Portfolio"
-                    desc="My Front End Development and UI Design portfolio"
+                    desc="Owen G. Bean Front End Development and UI Design portfolio"
                 />
                 <Navbar />
                 <main style={STYLE.main}>

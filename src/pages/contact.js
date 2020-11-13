@@ -18,7 +18,7 @@ class Contact extends React.Component{
             <div>
                 <Meta 
                     title="Contact Me"
-                    desc="Contact Me with email owenbean400@gmail.com or with Linkedin"
+                    desc="Contact Owen G. Bean with email owenbean400@gmail.com or with Linkedin"
                 />
                 <Navbar />
                 <main className="contact-main">

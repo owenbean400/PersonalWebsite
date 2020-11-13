@@ -66,7 +66,7 @@ class Graphics extends React.Component{
             <div>
                 <Meta 
                     title="Graphic Design Portfolio"
-                    desc="I know how to use Photoshop CC and Illustrator CC from my graphic design"
+                    desc="Owen G. Bean knows how to use Photoshop CC and Illustrator CC from my graphic design"
                 />
                 <Navbar />
                 <main style={STYLE.main}>

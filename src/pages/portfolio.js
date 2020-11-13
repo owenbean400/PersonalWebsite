@@ -63,7 +63,7 @@ class Portfolio extends React.Component{
             <div>
                 <Meta 
                     title="Portfolio"
-                    desc="My portfolio of front end development and graphic designs"
+                    desc="Owen G. Bean portfolio of front end development and graphic designs"
                 />
                 <Navbar />
                 <main style={STYLE.main}>

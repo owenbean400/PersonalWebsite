@@ -50,7 +50,7 @@ class Explore extends React.Component{
             <div>
                 <Meta 
                     title="Explore"
-                    desc="Explore different fun thinfs Owen Bean has created.
+                    desc="Explore different fun things Owen G. Bean has created.
                         This includes games, blog, and some React UI Components"
                 />
                 <Navbar />

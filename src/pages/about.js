@@ -37,9 +37,9 @@ class About extends React.Component{
             <div>
                 <Meta 
                     title="About Me"
-                    desc=">I am a front end web developer from Maine. I specialize with the React JS framework to create
-                                ui and implement these ui in website development. I have developed my own UI and wireframe design
-                                and from a prototype. Addtionally, I done Graphic Design for several at CATC, and understand
+                    desc="Owen G. Bean is a front end web developer from Maine. Owen specialize with the React JS framework to create
+                                ui and implement these ui in website development. He have developed my own UI and wireframe design
+                                and from a prototype. Addtionally, Owen Bean has done Graphic Design for several at CATC, and understand
                                 graphic design fundaments."
                 />
                 <Navbar />

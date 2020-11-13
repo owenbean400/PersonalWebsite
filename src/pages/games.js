@@ -18,7 +18,7 @@ class Game extends React.Component{
                 <Navbar />
                 <Meta 
                     title="Games"
-                    desc="Play Owen Bean Games that he created and built with Javascript"
+                    desc="Play Owen G. Bean Games that he created and built with Javascript"
                 />
                 <main>
                     <Section header="Games">
