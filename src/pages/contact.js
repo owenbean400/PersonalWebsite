@@ -8,6 +8,7 @@ import StationaryButton from '../components/buttons/stationaryButton';
 
 import GmailLogo from '../images/skills/gmail.png';
 import LinkinLogo from '../images/skills/linkin.png';
+import FreeCodeCampLogo from '../images/skills/freecodecamp.jpg';
 import FlexShow from '../components/flexShow';
 import Meta from '../components/meta';
 
@@ -26,10 +27,11 @@ class Contact extends React.Component{
                     action="https://formspree.io/f/mjvpobvq"
                     method="POST"
                     >
-                    <h5>Contact Me</h5>
+                    <h5>Contact <br/> Owen Bean</h5>
                         <FlexShow css={{margin: '12px 0 36px 0', justifyContent: 'space-evenly'}}>
                             <Skills image={GmailLogo} altImg="Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
                             <Skills image={LinkinLogo} altImg="LinkedIn Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
+                            <Skills image={FreeCodeCampLogo} altImg="FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
                         </FlexShow>
                     <label>
                         Your email:

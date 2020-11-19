@@ -11,6 +11,7 @@ import ComputerImg from '../images/computerHeader.jpg';
 import PortfolioButton from '../components/portfolioButtonContain';
 import Meta from '../components/meta'
 import '../pageScss/index.scss';
+import SkillBar from '../components/skillbar';
 
 import CodeIcon from '../images/expert/code.svg';
 import ArtIcon from '../images/expert/art.svg';
@@ -30,6 +31,7 @@ import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
 import PropTypes from 'prop-types';
 import OwenBeanImage from '../components/imageFixed/owenBeanImage';
 import ComputerHeaderImage from '../components/imageFixed/computerHeader';
+import OwenBeanImageLaptop from "../components/imageFixed/owenBeanImageLaptop.js";
 
 class Home extends React.Component{
   constructor() {
@@ -107,7 +109,7 @@ class Home extends React.Component{
     return(
       <div className="container">
         <Meta
-            desc="Owen G. Bean is a front end developer from Maine. Owen mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS. 
+            desc="Owen Guaraldo Bean is a front end developer from Maine. Owen mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS. 
             He creates elegant websites with screen respondsive and has the ability to be scaled up. 
             Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator. 
             Feel free to check out Owen G. Bean webpage!"
@@ -124,7 +126,7 @@ class Home extends React.Component{
                 <StationaryButton css={{marginTop: '20px'}} title="Contact" link="/contact"/>
               </FlexShow>
             </div>
-            <OwenBeanImage />
+            <OwenBeanImageLaptop />
           </div>
           <div className="expert-container">
               <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>
@@ -134,7 +136,6 @@ class Home extends React.Component{
           <div className="market-container">
             <div className="market-image-container">
               <ComputerHeaderImage />
-              {/*<img src={ComputerImg} className="market-image" alt="computer"/> */}
             </div>
             <div className="market-info-container">
               <h2>Developing Website Front Ends</h2>
@@ -152,14 +153,20 @@ class Home extends React.Component{
           </FlexShow>
           </Section>
           <Section header="Programs" actionName="My Skills" link="/about">
-            <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0'}}>
-              <Skills image={HTMLLogo} altImg="HTML Logo" name="Hypertext Markup Language" iconLink="https://developer.mozilla.org/en-US/docs/Web/HTML"/>
-              <Skills image={CSSLogo} altImg="CSS Logo" name="Cascading Style Sheets" iconLink="https://www.w3.org/Style/CSS/Overview.en.html"/>
-              <Skills image={JSLogo} altImg="Javascript Logo" name="Javascript" iconLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
-              <Skills image={SassLogo} altImg="Sass Logo" name="Syntactically Awesome Style Sheet" iconLink="https://sass-lang.com/"/>
-              <Skills image={ReactLogo} altImg="React JS Logo" name="React JS" iconLink="https://reactjs.org/"/>
-              <Skills image={GatsbyLogo} altImg="Gatsby JS Logo" name="Gatsby JS" iconLink="https://www.gatsbyjs.com/"/>
+            <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0', gridGap: '32px'}}>
+              <SkillBar barWidthPercent="70" header="HTML" image={HTMLLogo}/>
+              <SkillBar barWidthPercent="95" header="CSS" image={CSSLogo}/>
+              <SkillBar barWidthPercent="60" header="Javascript" image={JSLogo}/>
+              <SkillBar barWidthPercent="70" header="React JS" image={ReactLogo}/>
+              <SkillBar barWidthPercent="50" header="GatsbyJS"image={GatsbyLogo}/>
+              <SkillBar barWidthPercent="60" header="Sass" image={SassLogo}/>
             </FlexShow>
+          </Section>
+          <Section header="About Me" actionName="More About Me" link="/about">
+            <div className="about-container">
+              <OwenBeanImage />
+              <p className="main-about-p">I am a front end web developer from Maine. I specialize with the React JS framework to create ui and implement these ui in website development. I have developed my own UI and wireframe design and from a prototype. Addtionally, I done Graphic Design for several at CATC, and understand graphic design fundaments. Feel free to contact me if you want a front end website to be developed or to chat.</p>
+            </div>
           </Section>
         </main>
         <Footer />

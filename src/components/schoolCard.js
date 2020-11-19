@@ -5,7 +5,7 @@ class SchoolCard extends React.Component{
     render(){
         const STYLE = {
             container: {
-                width: '200px',
+                width: '240px',
                 backgroundColor: 'whitesmoke',
                 borderRadius: '8px',
                 padding: '8px',

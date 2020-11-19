@@ -7,15 +7,15 @@ const STYLE = {
     margin: '16px auto',
 }
 
-const OwenBeanImage = ({data}, source) => (
+const OwenBeanImageLaptop = ({data}, source) => (
     <div>
         <StaticQuery 
             query = {graphql`
                 query {
-                    image: file(relativePath: {eq: "owenbean.png"}) {
+                    image: file(relativePath: {eq: "owenbeanLaptop.png"}) {
                     id
                     childImageSharp {
-                        fixed(width: 320, quality: 100, traceSVG: {color: "#151035", blackOnWhite: true, threshold: 150}) {
+                        fixed(width: 320, quality: 90, traceSVG: {color: "#151035", blackOnWhite: true, threshold: 200}) {
                             ...GatsbyImageSharpFixed_tracedSVG
                         }
                     }
@@ -23,10 +23,10 @@ const OwenBeanImage = ({data}, source) => (
                 }
             `}
             render={data => (
-                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean" durationFadeIn={500}/>
+                <Img fixed={data.image.childImageSharp.fixed} style={STYLE} draggable={false} alt="Owen G. Bean Laptop" durationFadeIn={500}/>
             )}
         />
     </div>
 );
 
-export default OwenBeanImage
+export default OwenBeanImageLaptop
