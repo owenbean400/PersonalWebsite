@@ -23,6 +23,10 @@ import JSLogo from '../images/skills/js.png';
 import SassLogo from '../images/skills/sass.png';
 import ReactLogo from '../images/skills/react.png';
 import GatsbyLogo from '../images/skills/gatsby.png'
+import GmailLogo from '../images/skills/gmail.png';
+import LinkinLogo from '../images/skills/linkin.png';
+import GithubLogo from '../images/skills/github.png';
+import FreeCodeCampLogo from '../images/skills/freecodecamp.jpg';
 
 import ReliableBoardPort from '../images/portfolio/reliable_board_display.jpg';
 import HereTheScoopPort from '../images/portfolio/here_the_scoop_display.jpg';
@@ -104,8 +108,6 @@ class Home extends React.Component{
       }
     };
 
-    console.log(portfolioImages);
-
     return(
       <div className="container">
         <Meta
@@ -167,6 +169,14 @@ class Home extends React.Component{
               <OwenBeanImage />
               <p className="main-about-p">I am a front end web developer from Maine. I specialize with the React JS framework to create ui and implement these ui in website development. I have developed my own UI and wireframe design and from a prototype. Addtionally, I done Graphic Design for several at CATC, and understand graphic design fundaments. Feel free to contact me if you want a front end website to be developed or to chat.</p>
             </div>
+          </Section>
+          <Section header="Contact" actionName="Contact Me" link="/contact">
+              <FlexShow css={{margin: '12px 0 36px 0', justifyContent: 'space-evenly'}}>
+                  <Skills image={GmailLogo} altImg="Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
+                  <Skills image={LinkinLogo} altImg="LinkedIn Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
+                  <Skills image={GithubLogo} altImg="Github Logo" name="GitHub" iconLink="https://github.com/owenbean400"/>
+                  <Skills image={FreeCodeCampLogo} altImg="FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
+              </FlexShow>
           </Section>
         </main>
         <Footer />

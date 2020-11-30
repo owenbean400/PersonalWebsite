@@ -25,6 +25,7 @@ import OwenBeanImage from '../components/imageFixed/owenBeanImage';
 import GmailLogo from '../images/skills/gmail.png';
 import LinkinLogo from '../images/skills/linkin.png';
 import FreeCodeCampLogo from '../images/skills/freecodecamp.jpg';
+import GithubLogo from '../images/skills/github.png';
 
 import '../pageScss/about.scss';
 import SchoolCard from '../components/schoolCard';
@@ -91,6 +92,7 @@ class About extends React.Component{
                         <FlexShow css={{margin: '12px 0 36px 0', justifyContent: 'space-evenly'}}>
                             <Skills image={GmailLogo} altImg="Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
                             <Skills image={LinkinLogo} altImg="LinkedIn Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
+                            <Skills image={GithubLogo} altImg="Github Logo" name="GitHub" iconLink="https://github.com/owenbean400"/>
                             <Skills image={FreeCodeCampLogo} altImg="FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
                         </FlexShow>
                     </Section>
