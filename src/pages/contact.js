@@ -37,7 +37,7 @@ class Contact extends React.Component{
                         </FlexShow>
                     <label>
                         Your email:
-                        <input type="text" placeholder="Email Address" name="_replyto" required/>
+                        <input type="text" placeholder="Enter Email Address Here" name="_replyto" required/>
                     </label>
                     <label>
                         Message:

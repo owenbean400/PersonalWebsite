@@ -9,6 +9,9 @@
     flex-direction: column;
     text-align: center;
     background-color: whitesmoke;
+    border-radius: 24px;
+    -webkit-box-shadow: 12px 12px 30px #ccc, -12px -12px 30px white;
+    box-shadow: 12px 12px 30px #ccc, -12px -12px 30px white;
     @media screen and (min-width: 768px) {
       width: 600px;
       margin: 0 auto;
@@ -35,22 +38,31 @@
 
       textarea {
         height: 100px;
-        width: 100%;
-        background-color: white;
-        margin: 8px 0 0 0;
-        padding: 8px;
+        width: calc(90% - 32px);
+        background-color: #eee;
+        border: none;
+        outline: none;
+        border-radius: 24px;
+        display: block;
+        margin: 8px auto 0 auto;
+        padding: 16px 16px 16px 24px;
         font-family: $fontfamily;
+        box-shadow: inset 8px 8px 8px #ddd, inset -8px -8px 8px #fff;
+        resize: none;
       }
 
       input {
         height: 36px;
-        width: 100%;
-        max-width: 100%;
-        background-color: white;
-        border: $primarydarkcolor 1px solid;
-        margin: 8px 0 0 0;
-        padding: 0 0 0 8px;
+        width: calc(90% - 32px);
+        background-color: #eee;
+        border: none;
+        outline: none;
+        border-radius: 24px;
+        display: block;
+        margin: 8px auto 0 auto;
+        padding: 16px 16px 16px 24px;
         font-family: $fontfamily;
+        box-shadow: inset 8px 8px 8px #ddd, inset -8px -8px 8px #fff;
         &:focus {
           border: none;
         }

@@ -28,7 +28,8 @@ class SkillBar extends React.Component{
                 backgroundColor: 'whitesmoke',
                 width: '300px',
                 borderRadius: '8px',
-                padding: '12px'
+                padding: '12px',
+                boxShadow: 'inset 12px 12px 30px #ddd, inset -12px -12px 30px 2px white'
             },
             skillBarContainer: {
                 display: 'grid',
@@ -39,12 +40,17 @@ class SkillBar extends React.Component{
                 backgroundColor: '#151035',
                 width: '240px',
                 height: '32px',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: 'inset -6px -6px 30px 2px #2d2561'
             },
             barInContainer: {
                 backgroundColor: '#593ed6',
                 width: this.props.barWidthPercent + '%',
                 height: '32px',
                 color: 'white',
+                borderRadius: '16px 0 0 16px',
+                boxShadow: 'inset 0 -6px 30px 2px #705ad6'
             },
             header: {
                 fontSize: '18px',
@@ -52,7 +58,7 @@ class SkillBar extends React.Component{
             },
             percentText: {
                 margin: '0',
-                padding: '6px 0 0 8px',
+                padding: '6px 0 0 12px',
                 opacity: (this.state.hovering) ? '1' : '0',
                 transition: 'opacity .33s'
             },
