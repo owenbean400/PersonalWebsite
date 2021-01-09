@@ -1,0 +1,49 @@
+@import "./variable.scss"
+
+.blog-main
+    padding: 60px 0 240px 0
+    text-align: center
+
+    .blog-link-container
+        @media screen and ( min-width: $phonesize )
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            margin: 0 auto
+
+        .blog-card
+            margin: 24px
+            padding: 24px
+            background-color: whitesmoke
+            text-align: left
+            box-shadow: inset 12px 12px 30px #ddd, inset -12px -12px 30px 2px white
+            @media screen and ( min-width: $phonesize )
+                width: 320px
+                height: 120px
+                display: grid
+                grid-template-columns: auto
+                grid-template-rows: auto auto
+                align-content: space-between
+
+            a
+                color: inital
+                text-decoration: none
+                font-size: 24px
+
+            .blog-info
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                grid-gap: 12px
+
+                p
+                    margin: 0
+
+    .blog-search-bar
+        height: 32px
+        margin: 0 24px
+        padding-left: 8px
+        @media screen and ( min-width: $phonesize )
+            width: 50vw
+        @media screen and ( max-width: $phonesize )
+            width: 80%

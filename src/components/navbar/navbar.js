@@ -7,7 +7,7 @@ import './navbar.scss';
 
 const LINKS = {
     portfolio: ['Portfolio', 'Websites', 'Graphics'],
-    explore: ['Explore', 'Games'],
+    explore: ['Explore','Blog', 'Games'],
     about: ['Contact', 'About'],
 }
 
