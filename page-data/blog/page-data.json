@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"d65e8adf-5eed-54fe-88ab-22c8d517acd2","fields":{"slug":"/blog/secretSantaGenerator/"},"wordCount":{"words":304},"frontmatter":{"date":"2020-12-28","title":"Secret Santa Generator NodeJS"}}}]}},"pageContext":{}},"staticQueryHashes":[]}
