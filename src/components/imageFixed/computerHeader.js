@@ -21,7 +21,7 @@ const ComputerHeaderImage = ({data}, source) => (
                 }
             `}
             render={data => (
-                <Img fluid={data.image.childImageSharp.fluid} style={STYLE} loading="lazy" draggable={false} alt="Computer Designs" durationFadeIn={700}/>
+                <Img fluid={data.image.childImageSharp.fluid} style={STYLE} loading="lazy" draggable={false} alt="Computer Designs of front end developments" durationFadeIn={700}/>
             )}
         />
     </div>

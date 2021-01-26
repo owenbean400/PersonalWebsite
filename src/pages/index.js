@@ -29,6 +29,7 @@ import GithubLogo from '../images/skills/github.png';
 import FreeCodeCampLogo from '../images/skills/freecodecamp.jpg';
 
 import ReliableBoardPort from '../images/portfolio/reliable_board_display.jpg';
+import KnitGenerator from '../images/portfolio/bean_knit_gen.jpg';
 import HereTheScoopPort from '../images/portfolio/here_the_scoop_display.jpg';
 import BeanJuicePort from '../images/portfolio/bean_juice_display.jpg';
 import PortfolioPort from '../images/portfolio/portfolio_display.jpg';
@@ -73,8 +74,12 @@ class Home extends React.Component{
     var portfolioImages = [];
     if (typeof window !== `undefined`){
       portfolioImages.push(
-          <PortfolioDisplay image={ReliableBoardPort} title="Reliable Board Webpage">
-          </PortfolioDisplay>
+        <PortfolioDisplay image={KnitGenerator} title="Knit Pattern Generator">
+          <PortfolioButton>
+            <StationaryButton title="URL" link="https://owenbean400.github.io/doubleSidedKnittingGenerator/" isNewTab={true}/>
+            <StationaryButton title="GitHub" link="https://github.com/owenbean400/doubleSidedKnittingGenerator" isNewTab={true}/>
+          </PortfolioButton>
+        </PortfolioDisplay>
       );
       if(window.innerWidth >= 480){
         portfolioImages.push(
@@ -131,9 +136,9 @@ class Home extends React.Component{
             <OwenBeanImageLaptop />
           </div>
           <div className="expert-container">
-              <div className="expert"><img src={CodeIcon} alt="code icon" /><p className="export-text">Code Development</p></div>
-              <div className="expert"><img src={RespondsiveIcon} alt="code icon"/><p className="export-text">Respondsive Design</p></div>
-              <div className="expert"><img src={ArtIcon} alt="code icon"/><p className="export-text">Creative Design</p></div>
+              <div className="expert"><img src={CodeIcon} alt="front end developer of code icon from owen bean" /><p className="export-text">Code Development</p></div>
+              <div className="expert"><img src={RespondsiveIcon} alt="front end dev of responsive icon from owen bean"/><p className="export-text">Respondsive Design</p></div>
+              <div className="expert"><img src={ArtIcon} alt="front end dev of creativty icon from owen bean"/><p className="export-text">Creative Design</p></div>
           </div>
           <div className="market-container">
             <div className="market-image-container">
@@ -156,12 +161,12 @@ class Home extends React.Component{
           </Section>
           <Section header="Programs" actionName="My Skills" link="/about">
             <FlexShow css={{backgroundColor: '#eeeeee', alignItems: 'center', padding: '32px 0', gridGap: '32px'}}>
-              <SkillBar barWidthPercent="70" header="HTML" image={HTMLLogo}/>
-              <SkillBar barWidthPercent="95" header="CSS" image={CSSLogo}/>
-              <SkillBar barWidthPercent="60" header="Javascript" image={JSLogo}/>
-              <SkillBar barWidthPercent="70" header="React JS" image={ReactLogo}/>
-              <SkillBar barWidthPercent="50" header="GatsbyJS"image={GatsbyLogo}/>
-              <SkillBar barWidthPercent="60" header="Sass" image={SassLogo}/>
+              <SkillBar barWidthPercent="70" header="HTML" image={HTMLLogo} imageAlt="Front End Dev HTML Logo"/>
+              <SkillBar barWidthPercent="95" header="CSS" image={CSSLogo} imageAlt="Front End Dev CSS Logo"/>
+              <SkillBar barWidthPercent="60" header="Javascript" image={JSLogo} imageAlt="Front End Dev Javascript Logo"/>
+              <SkillBar barWidthPercent="70" header="React JS" image={ReactLogo} imageAlt="Front End Dev ReactJS Logo"/>
+              <SkillBar barWidthPercent="50" header="GatsbyJS"image={GatsbyLogo} imageAlt="Front End Dev GatsbyJS Logo"/>
+              <SkillBar barWidthPercent="60" header="Sass" image={SassLogo} imageAlt="Front End Dev Sass Logo"/>
             </FlexShow>
           </Section>
           <Section header="About Me" actionName="More About Me" link="/about">
@@ -172,10 +177,10 @@ class Home extends React.Component{
           </Section>
           <Section header="Contact" actionName="Contact Me" link="/contact">
               <FlexShow css={{margin: '12px 0 36px 0', justifyContent: 'space-evenly'}}>
-                  <Skills image={GmailLogo} altImg="Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
-                  <Skills image={LinkinLogo} altImg="LinkedIn Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
-                  <Skills image={GithubLogo} altImg="Github Logo" name="GitHub" iconLink="https://github.com/owenbean400"/>
-                  <Skills image={FreeCodeCampLogo} altImg="FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
+                  <Skills image={GmailLogo} altImg="Owen Bean Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
+                  <Skills image={LinkinLogo} altImg="Owen Bean Linkedin Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
+                  <Skills image={GithubLogo} altImg="Owen Bean Github Logo" name="GitHub" iconLink="https://github.com/owenbean400"/>
+                  <Skills image={FreeCodeCampLogo} altImg="Owen Bean FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
               </FlexShow>
           </Section>
         </main>

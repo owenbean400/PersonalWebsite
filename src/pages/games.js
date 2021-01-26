@@ -8,6 +8,7 @@ import PortfolioButton from '../components/portfolioButtonContain';
 import StationaryButton from '../components/buttons/stationaryButton';
 
 import BBGame from '../images/games/bbGame.jpg';
+import RPSGame from '../images/games/rps.jpg';
 import Meta from '../components/meta';
 
 class Game extends React.Component{
@@ -27,6 +28,12 @@ class Game extends React.Component{
                                 <PortfolioButton>
                                     <StationaryButton title="Play" link="https://owenbean400.github.io/3dworld/" isNewTab={true}/>
                                     <StationaryButton title="Github Code" link="https://github.com/owenbean400/3dworld" isNewTab={true}/>
+                                </PortfolioButton>
+                            </PortfolioDisplay>
+                            <PortfolioDisplay image={RPSGame}>
+                                <PortfolioButton>
+                                    <StationaryButton title="Play" link="https://owenbean400.github.io/rockscissorpaper/" isNewTab={true}/>
+                                    <StationaryButton title="Github Code" link="https://github.com/owenbean400/rockscissorpaper" isNewTab={true}/>
                                 </PortfolioButton>
                             </PortfolioDisplay>
                         </FlexShow>

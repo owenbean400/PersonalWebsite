@@ -6,6 +6,7 @@ import Section from '../components/section';
 import FlexShow from '../components/flexShow';
 
 import BBGame from '../images/games/bbGame.jpg';
+import RPSGame from '../images/games/rps.jpg';
 import PortfolioDisplay from '../components/portfolioDisplay';
 import StationaryButton from '../components/buttons/stationaryButton';
 import PortfolioButton from '../components/portfolioButtonContain.js';
@@ -61,6 +62,12 @@ class Explore extends React.Component{
                                 <PortfolioButton>
                                     <StationaryButton title="Play" link="https://owenbean400.github.io/3dworld/" isNewTab={true}/>
                                     <StationaryButton title="Github Code" link="https://github.com/owenbean400/3dworld" isNewTab={true}/>
+                                </PortfolioButton>
+                            </PortfolioDisplay>
+                            <PortfolioDisplay image={RPSGame}>
+                                <PortfolioButton>
+                                    <StationaryButton title="Play" link="https://owenbean400.github.io/rockscissorpaper/" isNewTab={true}/>
+                                    <StationaryButton title="Github Code" link="https://github.com/owenbean400/rockscissorpaper" isNewTab={true}/>
                                 </PortfolioButton>
                             </PortfolioDisplay>
                         </FlexShow>
