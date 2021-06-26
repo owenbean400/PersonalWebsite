@@ -1,0 +1,106 @@
+
+.web-content
+    background-color: #eee
+    overflow: hidden
+    max-width: 500px
+    @media screen and ( min-width: 960px )
+        margin: 0
+        width: 500px
+
+    @media screen and ( max-width: 960px )
+        width: 100%
+    @media screen and ( max-width: 510px )
+        border-radius: 0
+    @media screen and ( min-width: 510px )
+        border-radius: 32px
+    @media screen and ( max-width: 768px )
+        width: 100%
+        margin: 0 auto
+
+.navbar-tool
+    height: 48px
+    width: calc(100% - 32px)
+    padding: 0 16px
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    background-color: #444
+    align-items: center
+
+    h5
+        font-size: 24px
+        color: white
+        margin: 0
+
+    .circle-container
+        display: flex
+        align-items: center
+
+        .circle
+            border-radius: 100%
+            width: 16px
+            height: 16px
+            margin: 0 0 0 16px
+            cursor: pointer
+            &:hover
+                opacity: 0.5
+
+        .red
+            background-color: red
+        .yellow
+            background-color: yellow
+        .green
+            background-color: green
+
+.html-container
+    background-color: #1e1e1e
+    border-radius: 32px
+    @media screen and ( min-width: 960px )
+        padding: 32px
+        width: 300px
+        margin: 32px 0
+    @media screen and ( max-width: 960px )
+        padding: 48px 32px 32px 32px
+        margin: -32px auto 0 auto
+
+    .tag
+        color: #00B8F2
+
+    .word
+        color: #99E100
+
+.display-content
+    margin: 100px 0
+    display: grid
+    @media screen and ( min-width: 960px )
+        grid-template-rows: auto
+        justify-content: center
+        grid-template-columns: auto auto
+    @media screen and ( max-width: 960px ) and (min-width: 510px)
+        grid-template-rows: auto auto
+        grid-template-columns: 510px
+        justify-content: center
+        align-items: center
+    @media screen and ( max-width: 510px )
+        grid-template-rows: auto auto
+        grid-template-columns: 100%
+        justify-content: center
+        align-items: center
+
+    .right
+        grid-column-start: 2
+        grid-row-start: 1
+    .left
+        grid-column-start: 1
+        grid-row-start: 1
+
+.portfolio-grid
+    display: grid
+    @media screen and ( min-width: 350px )
+        grid-template-columns: auto auto
+    @media screen and ( max-width: 350px )
+        grid-template-columns: auto
+
+    .button-flow
+        display: flex
+        flex-direction: column
