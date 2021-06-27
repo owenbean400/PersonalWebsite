@@ -11,7 +11,12 @@ export default function ContentDisplay(props) {
         html={props.html}
         reverse={props.reverse}
       />
-      <WebContent title={props.title} reverse={props.reverse}>
+      <WebContent
+        title={props.title}
+        reverse={props.reverse}
+        noPad={props.noPad}
+        isHTML={true}
+      >
         {props.children}
       </WebContent>
     </div>

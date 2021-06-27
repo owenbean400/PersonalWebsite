@@ -3,7 +3,7 @@ import NavbarTool from "./navbarTool"
 
 export default function WebContent(props) {
   const [isPhone, setIsPhone] = useState(window.innerWidth <= 960)
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState(false)
 
   useEffect(() => {
     window.addEventListener("resize", () =>
@@ -19,8 +19,8 @@ export default function WebContent(props) {
     <div
       class="web-content"
       style={{
-        gridColumnStart: !isPhone && !props.reverse ? "2" : "1", 
-        gridRowStart: "1", 
+        gridColumnStart: !isPhone && !props.reverse ? "2" : "1",
+        gridRowStart: "1",
         position: isActive ? "fixed" : "inherit",
         top: "64px",
         left: 0,
@@ -28,13 +28,17 @@ export default function WebContent(props) {
         width: isActive ? "100vw" : "auto",
         height: isActive ? "100vh" : "auto",
         borderRadius: isActive ? "0px" : "",
+        margin: props.isHTML || isActive ? "0" : "64px auto",
       }}
     >
-      <NavbarTool title={props.title} setActive={setActive} isActive={isActive}/>
-      <div style={{padding: "16px"}}>
+      <NavbarTool
+        title={props.title}
+        setActive={setActive}
+        isActive={isActive}
+      />
+      <div style={{ padding: props.noPad ? "0px" : "16px" }}>
         {props.children}
       </div>
     </div>
   )
 }
-
