@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Footer from "../components/footer/footer"
 import Navbar from "../components/navbar/navbar"
 import Section from "../components/section"
-import SkillBar from "../components/skillbar"
 import Meta from "../components/meta"
 import Skills from "../components/skills"
 import FlexShow from "../components/flexShow"
@@ -48,17 +46,15 @@ class About extends React.Component {
       <div>
         <Meta
           title="About Me"
-          desc="Owen G. Bean is a front end web developer from Maine. Owen specialize with the React JS framework to create
-                                ui and implement these ui in website development. He have developed my own UI and wireframe design
-                                and from a prototype. Addtionally, Owen Bean has done Graphic Design for several at CATC, and understand
-                                graphic design fundaments."
+          desc="Owen Guaraldo Bean is a Software developer from Maine. 
+              Owen loves to code with several different program language.
+              Feel free to check out Owen G. Bean webpage!"
         />
         <Navbar />
         <main style={STYLE.main}>
           <div className="about-container">
             <div>
               <h1> About Owen Bean</h1>
-              <div>{/*buttons */}</div>
               <p className="about-info">
                 I am a software developer in Maine. When I was in 4th grade, I
                 wanted to be a computer programming. It's even written down on

@@ -15,11 +15,9 @@ export default function HTMLContent(props) {
   })
 
   let htmlArr = []
-  console.log(typeof props.html === "string")
   let htmlString = props.html
   if (typeof htmlString === "string") {
     while (htmlString.trim().length !== 0) {
-      console.log("html: " + htmlString)
       if (htmlString.search("<") === 0) {
         htmlArr.push(htmlString.substring(0, htmlString.search(">") + 1))
         htmlString = htmlString.substring(
@@ -58,7 +56,6 @@ export default function HTMLContent(props) {
       )
     }
   })
-  console.log(htmlArr)
 
   return (
     <div

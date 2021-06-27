@@ -38,10 +38,9 @@ export default function Test() {
     <div>
       <Navbar />
       <Meta
-        desc="Owen Guaraldo Bean is a front end developer from Maine. Owen mainly programs with HTML, CSS, JS, React JS, Sass, and Gatsby JS. 
-            He creates elegant websites with screen respondsive and has the ability to be scaled up. 
-            Additionally, he has knowledge of Graphic Design, and is proficient with Adobe Photoshop and Adobe Illustrator. 
-            Feel free to check out Owen G. Bean webpage!"
+        desc="Owen Guaraldo Bean is a Software developer from Maine. 
+              Owen loves to code with several different program language.
+              Feel free to check out Owen G. Bean webpage!"
       />
       <div style={{ marginTop: "100px" }}></div>
       <ContentDisplay
@@ -119,7 +118,7 @@ export default function Test() {
       </ContentDisplay>
       <Title title="Portfolio" />
       <WebContent title="BAPL Website" noPad={true}>
-        <img src={BAPL} width="100%" />
+        <img src={BAPL} width="100%" alt="Bridge Academy Library Website" />
         <div
           style={{
             display: "flex",
@@ -143,7 +142,7 @@ export default function Test() {
         </div>
       </WebContent>
       <WebContent title="Knit Generator" noPad={true}>
-        <img src={KNIT} width="100%" />
+        <img src={KNIT} width="100%" alt="Double Sided Knitting Website" />
         <div
           style={{
             display: "flex",
@@ -287,6 +286,7 @@ function HeadContact() {
     container: {
       display: "flex",
       flexWrap: "wrap",
+      justifyContent: "space-evenly",
     },
     item: {
       margin: "16px",
@@ -325,8 +325,4 @@ function HeadContact() {
       />
     </div>
   )
-}
-
-const STYLE = {
-  headerDisplay: {},
 }
