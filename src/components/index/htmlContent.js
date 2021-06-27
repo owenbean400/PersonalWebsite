@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react"
 
 export default function HTMLContent(props) {
-  const [isPhone, setIsPhone] = useState(window.innerWidth <= 960)
+  const [isPhone, setIsPhone] = useState(true)
 
   useEffect(() => {
+    setIsPhone(window.innerWidth <= 960)
     window.addEventListener("resize", () =>
       setIsPhone(window.innerWidth <= 960)
     )

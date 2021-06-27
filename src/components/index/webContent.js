@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react"
 import NavbarTool from "./navbarTool"
 
 export default function WebContent(props) {
-  const [isPhone, setIsPhone] = useState(window.innerWidth <= 960)
+  const [isPhone, setIsPhone] = useState(true)
   const [isActive, setActive] = useState(false)
 
   useEffect(() => {
+    setIsPhone(window.innerWidth <= 960)
     window.addEventListener("resize", () =>
       setIsPhone(window.innerWidth <= 960)
     )
