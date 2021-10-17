@@ -148,18 +148,6 @@ class Portfolio extends React.Component {
               </PortfolioDisplay>
             </FlexShow>
           </Section>
-          <Section
-            header="Graphic Design Portfolio"
-            actionName="More Graphics"
-            link="/graphics"
-          >
-            <FlexShow css={STYLE_CHANGE}>
-              <PortfolioDisplay image={Conspiracy} title="Conspiracy Cruises" />
-              <PortfolioDisplay image={WaterMelon} title="Summer Water" />
-              <PortfolioDisplay image={StrawBuried} title="Straw Buried" />
-              <PortfolioDisplay image={TravelWriter} title="Travel Writers" />
-            </FlexShow>
-          </Section>
         </main>
         <Footer />
       </div>

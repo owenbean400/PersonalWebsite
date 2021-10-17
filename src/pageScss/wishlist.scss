@@ -12,6 +12,40 @@
     text-align: center;
   }
 
+  .wish-sort-setting {
+    margin: 16px;
+    width: 180px;
+    color: darkgray;
+  }
+
+  .wish-form {
+    display: grid;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 32px;
+    @media screen and (min-width: $tabletsize) {
+      grid-template-columns: auto auto auto;
+    }
+    @media screen and (max-width: $tabletsize) {
+      grid-template-columns: 324px;
+    }
+
+    .wish-filter-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #ddd;
+      border-radius: 16px;
+      margin: 16px;
+      padding: 16px;
+      @media screen and (min-width: $tabletsize) {
+        width: auto;
+      }
+      @media screen and (max-width: $tabletsize) {
+        width: 260px;
+      }
+    }
+  }
+
   .wish-contains {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +85,9 @@
         margin: 16px 0 0 0;
         font-size: 24px;
         color: gray;
+      }
+      .wish-rank {
+        display: none;
       }
     }
   }
