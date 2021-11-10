@@ -30,7 +30,7 @@ export default function WishList(props) {
           className="wish-sort-setting"
           onClick={() => setShowSortSetting(!showSortSetting)}
         >
-          {showSortSetting ? "Open Sorting Setting" : "Close Sorting Setting"}
+          {!showSortSetting ? "Open Sorting Setting" : "Close Sorting Setting"}
         </p>
         {showSortSetting ? (
           <form className="wish-form">
@@ -83,7 +83,7 @@ function FilterHTML(props) {
           }}
         ></input>
         <label>
-          Title {props.start} to {props.end}
+          {props.start} to {props.end}
         </label>
       </div>
       <div>
@@ -97,7 +97,7 @@ function FilterHTML(props) {
           }}
         ></input>
         <label>
-          Title {props.end} to {props.start}
+          {props.end} to {props.start}
         </label>
       </div>
     </div>
