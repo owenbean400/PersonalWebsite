@@ -65,8 +65,10 @@ class About extends React.Component {
                 Design, but when I started learning to web development, I fell
                 in love with coding. My favorite part about coding was the
                 logical reasoning behind and the ability that coding can yeild.
-                I continued on, learning more about programming languages,
-                Typescript, Java, Kotlin, and OpenEdge.
+                Currently I am working on debugging and programming for
+                Sharetec. Also, I am going on learning Java with data structures
+                at SMCC. I continued on, learning more about programming
+                languages, Typescript, Java, Kotlin, and OpenEdge.
               </p>
               <StationaryButton title="Contact" link="/contact" />
             </div>
@@ -76,24 +78,17 @@ class About extends React.Component {
             <div className="skills-container">
               <Skills
                 style={STYLE.item}
+                image={ProgressLogo}
+                altImg="Progress OpenEdge Logo"
+                name="Progress OpenEdge"
+                iconLink="https://www.progress.com/openedge"
+              />
+              <Skills
+                style={STYLE.item}
                 image={JSLogo}
                 altImg="Javascript Logo"
                 name="Javascript"
                 iconLink="https://www.javascript.com/"
-              />
-              <Skills
-                style={STYLE.item}
-                image={CSSLogo}
-                altImg="CSS Logo"
-                name="CSS"
-                iconLink="https://www.w3.org/Style/CSS/Overview.en.html"
-              />
-              <Skills
-                style={STYLE.item}
-                image={HTMLLogo}
-                altImg="HTML Logo"
-                name="HTML"
-                iconLink="https://html.spec.whatwg.org/"
               />
               <Skills
                 style={STYLE.item}
@@ -111,10 +106,17 @@ class About extends React.Component {
               />
               <Skills
                 style={STYLE.item}
-                image={ProgressLogo}
-                altImg="Progress OpenEdge Logo"
-                name="Progress OpenEdge"
-                iconLink="https://www.progress.com/openedge"
+                image={CSSLogo}
+                altImg="CSS Logo"
+                name="CSS"
+                iconLink="https://www.w3.org/Style/CSS/Overview.en.html"
+              />
+              <Skills
+                style={STYLE.item}
+                image={HTMLLogo}
+                altImg="HTML Logo"
+                name="HTML"
+                iconLink="https://html.spec.whatwg.org/"
               />
               <Skills
                 style={STYLE.item}
@@ -122,13 +124,6 @@ class About extends React.Component {
                 altImg="React Logo"
                 name="React"
                 iconLink="https://reactjs.org/"
-              />
-              <Skills
-                style={STYLE.item}
-                image={VueLogo}
-                altImg="Vue Logo"
-                name="Vue"
-                iconLink="https://vuejs.org/"
               />
               <Skills
                 style={STYLE.item}
@@ -143,13 +138,6 @@ class About extends React.Component {
                 altImg="Sass Logo"
                 name="Sass"
                 iconLink="https://sass-lang.com/"
-              />
-              <Skills
-                style={STYLE.item}
-                image={PhotoshopLogo}
-                altImg="Photoshop Logo"
-                name="Photoshop"
-                iconLink="https://www.adobe.com/"
               />
             </div>
           </Section>
