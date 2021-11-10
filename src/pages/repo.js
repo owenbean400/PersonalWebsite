@@ -16,12 +16,6 @@ import JSLogo from "../images/skills/js.png"
 import JavaLogo from "../images/skills/java.png"
 import KotlinLogo from "../images/skills/kotlin.png"
 import TypescriptLogo from "../images/skills/typescript.png"
-import ProgressLogo from "../images/skills/progress.png"
-import SassLogo from "../images/skills/sass.png"
-import ReactLogo from "../images/skills/react.png"
-import VueLogo from "../images/skills/vue.png"
-import GatsbyLogo from "../images/skills/gatsby.png"
-import PhotoshopLogo from "../images/skills/photoshop_logo.png"
 
 const data = WishListJSON
 
@@ -33,8 +27,6 @@ logoMap.set("CSS", CSSLogo)
 logoMap.set("Java", JavaLogo)
 logoMap.set("TypeScript", TypescriptLogo)
 
-console.log(logoMap.get("?"))
-
 export default function WishList(props) {
   const [repo, setRepo] = useState([])
 
@@ -43,8 +35,6 @@ export default function WishList(props) {
       .then(response => response.json())
       .then(resultData => setRepo(resultData))
   }, [])
-
-  console.log(repo)
 
   const REPO_HTML =
     repo.length > 0 ? (

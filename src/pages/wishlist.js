@@ -110,7 +110,6 @@ function sort(strObject, compFN, ascend) {
   for (let i = 0; i < Object.keys(data).length; i++) {
     index = findFront(arrItems, data[Object.keys(data)[i]], compFN, ascend)
     if (index < 0) index = index * -1 - 1
-    console.log(index)
     arrItems.splice(
       index,
       0,

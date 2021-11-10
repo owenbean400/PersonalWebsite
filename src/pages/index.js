@@ -7,8 +7,6 @@ import ContentDisplay from "../components/index/contentDisplay"
 import OwenBeanImageLaptop from "../components/imageFixed/owenBeanImageLaptop.js"
 
 import Skills from "../components/skills.js"
-import Title from "../components/title.js"
-import WebContent from "../components/index/webContent.js"
 
 import HTMLLogo from "../images/skills/HTML5_Logo.png"
 import CSSLogo from "../images/skills/CSS3_logo.png"
@@ -25,9 +23,6 @@ import GmailLogo from "../images/skills/gmail.png"
 import LinkinLogo from "../images/skills/linkin.png"
 import GithubLogo from "../images/skills/github.png"
 import FreeCodeCampLogo from "../images/skills/freecodecamp.jpg"
-
-import BAPL from "../images/portfolio/bapl.jpg"
-import KNIT from "../images/portfolio/knit.jpg"
 
 import Meta from "../components/meta.js"
 
