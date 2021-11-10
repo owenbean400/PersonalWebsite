@@ -15,11 +15,6 @@ import BAPLPort from "../images/portfolio/bapl_display.jpg"
 import BeanJuicePort from "../images/portfolio/bean_juice_display.jpg"
 import PortfolioPort from "../images/portfolio/portfolio_display.jpg"
 
-import Conspiracy from "../images/graphic_portfolio/conspiracy.jpg"
-import StrawBuried from "../images/graphic_portfolio/strawburiedad1.jpg"
-import TravelWriter from "../images/graphic_portfolio/travelwriterad2.jpg"
-import WaterMelon from "../images/graphic_portfolio/watermelon.jpg"
-
 const amountOfRows = 1
 
 const STYLE = {

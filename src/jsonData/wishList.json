@@ -6,10 +6,17 @@
         "price": 0,
         "rank": 2
     },
+    "butterfly": {
+        "title": "Butterfly Knife",
+        "image": "https://cdn11.bigcommerce.com/s-blqh8ck/images/stencil/original/products/4676/13334/IMG_1711-8__71665.1568249464.jpg?c=2",
+        "why": "These would be fun and dangerous to play with.",
+        "price": 30,
+        "rank": 3
+    },
     "toothpaste": {
         "title": "Arm and Hammer Advance White Toothpaste",
         "image": "https://www.armandhammer.com/-/media/aah/feature/product/oral-care/awfc-18600-07_front.png",
-        "why": "I am a human who like to keep his teeth clean. I buy this toothpaste when I run out of toothpaste",
+        "why": "I am a human who like to keep his teeth clean. I buy this toothpaste when I run out of toothpaste.",
         "price": 5,
         "rank": 6
     },
