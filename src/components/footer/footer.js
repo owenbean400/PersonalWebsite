@@ -10,15 +10,15 @@ class Footer extends React.Component {
     return (
       <div>
         <div className="action-container">
-          <StationaryButton title="Portfolio" link="/portfolio" />
+          <StationaryButton title="Repo" link="/repo" />
           <StationaryButton title="About" link="/about" />
           <StationaryButton title="Contact" link="/contact" />
         </div>
         <footer>
           <div className="links-container">
-            <FooterLinks footerlinks={["Portfolio", "Websites"]} />
-            <FooterLinks footerlinks={["Explore", "Games"]} />
-            <FooterLinks footerlinks={["Contact", "Wish List", "About"]} />
+            <FooterLinks footerlinks={["Repo", "Websites"]} />
+            <FooterLinks footerlinks={["Blog", "Games"]} />
+            <FooterLinks footerlinks={["Contact", "About", "Wish List"]} />
           </div>
           <p>
             Copyright © {DATE.getFullYear()} Owen Bean. All rights reserved.

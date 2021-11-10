@@ -90,7 +90,7 @@ export default function WishList(props) {
         )
       })
     ) : (
-      <p>Loading Repo API...</p>
+      <p className="repo-load">Loading Repo API...</p>
     )
 
   return (
