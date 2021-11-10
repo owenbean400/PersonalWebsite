@@ -1,0 +1,98 @@
+@import "./variable.scss";
+
+.repo-main {
+  margin-top: 125px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .descrip {
+    margin: 0 32px;
+    text-align: center;
+    padding: 0 16px;
+    max-width: 960px;
+    @media screen and (min-width: $phonesize) {
+      padding: 0 16px;
+    }
+    @media screen and (max-width: $phonesize) {
+      padding: 0 4px;
+    }
+  }
+
+  .repo-repos {
+    display: flex;
+    flex-wrap: wrap;
+
+    .web-content {
+      h4 {
+        margin: 0 0 8px 0;
+        font-size: 24px;
+        max-width: 300px;
+      }
+
+      .repo-group {
+        padding: 16px;
+        @media screen and (min-width: 510px) {
+          width: 300px;
+        }
+        @media screen and (max-width: 510px) {
+          width: calc(100vw - 74px);
+        }
+        border-radius: 16px;
+        background-color: #ddd;
+
+        .repo-owner {
+          display: grid;
+          grid-template-columns: 48px auto;
+          align-items: center;
+          border-radius: 16px;
+
+          img {
+            height: 32px;
+            width: 32px;
+            border-radius: 100%;
+          }
+
+          h5 {
+            font-size: 16px;
+            margin: 0;
+          }
+
+          .repo-logo-program {
+            margin: 0;
+          }
+        }
+
+        .repo-descript {
+          font-size: 16px;
+          font-weight: 300;
+          margin: 12px 0 0 0;
+          padding: 0;
+        }
+      }
+
+      .repo-logo-group {
+        display: grid;
+        grid-template-columns: 34px auto;
+        align-items: center;
+        margin: 12px 0;
+
+        .repo-logo-program {
+          margin: 0;
+        }
+
+        .repo-logo-img {
+          width: 28px;
+          height: auto;
+          margin: 0;
+        }
+      }
+
+      .repo-date {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

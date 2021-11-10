@@ -18,7 +18,7 @@ export default function WebContent(props) {
 
   return (
     <div
-      class="web-content"
+      className="web-content"
       style={{
         gridColumnStart: !isPhone && !props.reverse ? "2" : "1",
         gridRowStart: "1",
