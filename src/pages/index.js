@@ -51,7 +51,7 @@ export default function Test() {
           <br />
           Software Developer
         </h1>
-        <button>Portfolio</button>
+        <button>Repo</button>
         <button>Contact</button>
         <img src='OwenBeanLaptop.png' />"
         reverse={true}
@@ -65,8 +65,8 @@ export default function Test() {
           <div class="button-flow">
             <StationaryButton
               css={{ marginTop: "20px" }}
-              title="Portfolio"
-              link="/portfolio"
+              title="Repo"
+              link="/repo"
             />
             <StationaryButton
               css={{ marginTop: "20px" }}
@@ -116,55 +116,6 @@ export default function Test() {
           link="/about"
         />
       </ContentDisplay>
-      <Title title="Portfolio" />
-      <WebContent title="BAPL Website" noPad={true}>
-        <img src={BAPL} width="100%" alt="Bridge Academy Library Website" />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
-            backgroundColor: "#444",
-          }}
-        >
-          <StationaryButton
-            title="URL"
-            link="http://www.bapl.us/"
-            isNewTab={true}
-            css={{ margin: "32px" }}
-          />
-          <StationaryButton
-            title="GitHub"
-            link="https://github.com/owenbean400/dresdenLib"
-            isNewTab={true}
-            css={{ margin: "32px" }}
-          />
-        </div>
-      </WebContent>
-      <WebContent title="Knit Generator" noPad={true}>
-        <img src={KNIT} width="100%" alt="Double Sided Knitting Website" />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
-            backgroundColor: "#444",
-          }}
-        >
-          <StationaryButton
-            title="URL"
-            link="https://owenbean400.github.io/doubleSidedKnittingGenerator/"
-            isNewTab={true}
-            css={{ margin: "32px" }}
-          />
-          <StationaryButton
-            title="GitHub"
-            link="https://github.com/owenbean400/doubleSidedKnittingGenerator"
-            isNewTab={true}
-            css={{ margin: "32px" }}
-          />
-        </div>
-      </WebContent>
       <ContentDisplay
         title="Owen Contact"
         html='
@@ -173,7 +124,7 @@ export default function Test() {
           <a href="www.github.com"></a>
           <a href="freecodecamp"></a>
       '
-        reverse={true}
+        reverse={false}
       >
         <HeadContact></HeadContact>
         <StationaryButton
