@@ -16,9 +16,9 @@ class Footer extends React.Component {
         </div>
         <footer>
           <div className="links-container">
-            <FooterLinks footerlinks={["Repo", "Websites"]} />
+            <FooterLinks footerlinks={["Repo", "WearOS", "Websites"]} />
             <FooterLinks footerlinks={["Blog", "Games"]} />
-            <FooterLinks footerlinks={["Contact", "About", "Wish List"]} />
+            <FooterLinks footerlinks={["Contact", "About"]} />
           </div>
           <p>
             Copyright © {DATE.getFullYear()} Owen Bean. All rights reserved.

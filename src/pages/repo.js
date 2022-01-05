@@ -4,7 +4,6 @@ import Navbar from "../components/navbar/navbar"
 
 import "../pageScss/repo.scss"
 
-import WishListJSON from "../jsonData/wishList.json"
 import WebContent from "../components/index/webContent"
 import StationaryButton from "../components/buttons/stationaryButton"
 
@@ -17,8 +16,6 @@ import JavaLogo from "../images/skills/java.png"
 import KotlinLogo from "../images/skills/kotlin.png"
 import TypescriptLogo from "../images/skills/typescript.png"
 
-const data = WishListJSON
-
 const logoMap = new Map()
 logoMap.set("JavaScript", JSLogo)
 logoMap.set("Kotlin", KotlinLogo)
@@ -27,7 +24,7 @@ logoMap.set("CSS", CSSLogo)
 logoMap.set("Java", JavaLogo)
 logoMap.set("TypeScript", TypescriptLogo)
 
-export default function WishList(props) {
+export default function Repo(props) {
   const [repo, setRepo] = useState([])
 
   useEffect(() => {
@@ -109,7 +106,7 @@ export default function WishList(props) {
 function dateToString(dt) {
   dt = new Date(dt)
   let day = dt.getDate() < 10 ? "0" + dt.getDate() : dt.getDate()
-  return dt.getMonth() + "/" + day + "/" + dt.getFullYear()
+  return dt.getMonth() + 1 + "/" + day + "/" + dt.getFullYear()
 }
 
 function toTitle(str, shrink) {

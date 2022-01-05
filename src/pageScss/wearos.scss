@@ -1,0 +1,71 @@
+@import "./variable.scss";
+
+.wearos-main {
+  margin-top: 125px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .descrip {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 32px;
+    max-width: 960px;
+    @media screen and (min-width: $phonesize) {
+      padding: 0 16px;
+    }
+    @media screen and (max-width: $phonesize) {
+      padding: 0 4px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 0px;
+    justify-content: center;
+
+    .app-container {
+      background-color: #eee;
+
+      @media screen and (min-width: $phonesize) {
+        width: 280px;
+        border-radius: 16px;
+        margin: 32px;
+      }
+      @media screen and (max-width: $phonesize) {
+        width: 100%;
+        border-radius: 0px;
+        margin: 32px 0px;
+      }
+      &:hover {
+        transition: box-shadow 0.33s;
+        -webkit-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.15);
+      }
+
+      .link {
+        .title-container {
+          display: grid;
+          grid-template-columns: 32px auto;
+          align-items: center;
+          margin-left: 16px;
+
+          .logo {
+            width: 32px;
+          }
+          .title {
+            margin-left: 8px;
+          }
+        }
+        .feature {
+          width: 100%;
+        }
+        .desc {
+          padding: 2px 8px 20px 8px;
+        }
+      }
+    }
+  }
+}

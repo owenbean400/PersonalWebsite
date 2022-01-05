@@ -6,9 +6,9 @@ import Sidebar from "./sidebar.js"
 import "./navbar.scss"
 
 const LINKS = {
-  repo: ["Repo", "Websites"],
+  repo: ["Repo", "WearOS", "Websites"],
   blog: ["Blog", "Games"],
-  about: ["About", "Contact", "Wish List"],
+  about: ["About", "Contact"],
 }
 
 class Navbar extends React.Component {
