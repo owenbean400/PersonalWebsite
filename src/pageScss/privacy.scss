@@ -1,0 +1,30 @@
+@import "./variable.scss";
+
+.pp-main {
+    margin: 100px 0;
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .pp-app {
+        margin: 32px 0;
+
+        h3 {
+            margin: 0 0 8px 0;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+        }
+    }
+
+    @media screen and (min-width: $phonesize) {
+        padding: 0 32px 32px 32px;
+    }
+
+    @media screen and (max-width: $phonesize) {
+        padding: 0 8px 8px 8px;
+    }
+}

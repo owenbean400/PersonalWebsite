@@ -17,7 +17,7 @@ class Footer extends React.Component {
         <footer>
           <div className="links-container">
             <FooterLinks footerlinks={["Repo", "WearOS", "Websites"]} />
-            <FooterLinks footerlinks={["Blog", "Games"]} />
+            <FooterLinks footerlinks={["Blog", "Games", "Privacy Policy"]} />
             <FooterLinks footerlinks={["Contact", "About"]} />
           </div>
           <p>
