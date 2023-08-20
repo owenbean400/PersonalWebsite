@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import React from "react"
 import { useForm } from "react-hook-form"
 import Footer from "../components/footer/footer"
@@ -92,7 +92,7 @@ export default function Blog({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: [DESC] }) {
       edges {
         node {
           id

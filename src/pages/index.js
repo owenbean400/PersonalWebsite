@@ -33,7 +33,7 @@ export default function Test() {
     <div>
       <Navbar />
       <Meta
-        desc="Owen Guaraldo Bean is a Software developer from Maine. 
+        desc="Owen Guaraldo Bean is a software developer from Maine. 
               Owen loves to code with several different program language.
               Feel free to check out Owen G. Bean webpage!"
       />
@@ -80,16 +80,11 @@ export default function Test() {
         "
       >
         <p>
-          I am a software developer in Maine. When I was in 4th grade, I wanted
-          to be a computer programming. It's even written down on my old year
-          book. I love using the computer during my youth and tried my first
-          programming in html/javascript in 9th grade. It was terrible and I
-          haven't coded much until my senior year of high school. During my high
-          school year I was into Graphic Design, but when I started learning to
-          web development, I fell in love with coding. My favorite part about
-          coding was the logical reasoning behind and the ability that coding
-          can yeild. I continued on, learning more about programming languages,
-          Typescript, Java, Kotlin, and OpenEdge.
+          I am a software developer. I am currently doing Dev Ops at work,
+          developing on Flutter on the weekend, and at USM to finish computer
+          science degree. In the past, I've worked onto Angular, C# full stack
+          and general programming with Java. For websites, I've built the front
+          end with Angular, React, and Gastby JS framework.
         </p>
         <StationaryButton
           css={{ margin: "16px auto", display: "block" }}

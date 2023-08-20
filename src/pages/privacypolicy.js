@@ -19,6 +19,17 @@ class PrivacyPolicy extends React.Component {
             third party services.
           </p>
           <div class="pp-app">
+            <h3>Magic 8 Watch</h3>
+            <p>Magic 8 Watch does not collect or save any data.</p>
+          </div>
+          <div class="pp-app">
+            <h3>Tipping Calculator</h3>
+            <p>
+              The tipping calculator watch app foes not collect or save any
+              data.
+            </p>
+          </div>
+          <div class="pp-app">
             <h3>Open Weather</h3>
             <p>
               Open Weather application will grab your location as a coordinate

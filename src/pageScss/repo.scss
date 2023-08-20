@@ -8,9 +8,9 @@
   }
 
   .descrip {
-    margin: 0 32px;
+    margin: 0 auto;
     text-align: center;
-    padding: 0 16px;
+    padding: 0 48px;
     max-width: 960px;
     @media screen and (min-width: $phonesize) {
       padding: 0 16px;
@@ -73,7 +73,7 @@
         .repo-descript {
           font-size: 16px;
           font-weight: 300;
-          margin: 12px 0 0 0;
+          margin: 12px auto 0 auto;
           padding: 0;
         }
       }
