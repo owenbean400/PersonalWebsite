@@ -19,6 +19,13 @@ class PrivacyPolicy extends React.Component {
             third party services.
           </p>
           <div class="pp-app">
+            <h3>Recipe Roots</h3>
+            <p>
+              The data stored in Recipe Roots is not collected nor shared. The
+              data stays locally on the phone and is private to your phone.
+            </p>
+          </div>
+          <div class="pp-app">
             <h3>Magic 8 Watch</h3>
             <p>Magic 8 Watch does not collect or save any data.</p>
           </div>
