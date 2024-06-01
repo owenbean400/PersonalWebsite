@@ -24,7 +24,7 @@ jobs:
         run: npm install -g gatsby-cli@2.12.34
 
       - name: Gatsby Build Site
-        run: cd PersonalWebsite && gatsby build
+        run: npm run build
 
       - name: Supply CNAME
         run: echo 'owengbean.com' > ./public/CNAME
