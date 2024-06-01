@@ -33,18 +33,17 @@ export default function Test() {
     <div>
       <Navbar />
       <Meta
-        desc="Owen Guaraldo Bean is a software developer from Maine. 
-              Owen loves to code with several different program language.
-              Feel free to check out Owen G. Bean webpage!"
+        desc="Owen Guaraldo Bean is a DevOps Engineer from Maine. 
+              Owen loves to develop pipelines!"
       />
       <div style={{ marginTop: "100px" }}></div>
       <ContentDisplay
         title="Owen Website"
         html="
         <h1>
-          Owen G. Bean Portfolio
+          Owen G. Bean
           <br />
-          Software Developer
+          DevOps Engineer
         </h1>
         <button>Repo</button>
         <button>Contact</button>
@@ -52,9 +51,9 @@ export default function Test() {
         reverse={true}
       >
         <h1>
-          Owen G. Bean Portfolio
+          Owen G. Bean
           <br />
-          Software Developer
+          DevOps Engineer
         </h1>
         <div class="portfolio-grid">
           <div class="button-flow">
@@ -80,11 +79,10 @@ export default function Test() {
         "
       >
         <p>
-          I am a software developer. I am currently doing Dev Ops at work,
-          developing on Flutter on the weekend, and at USM to finish computer
-          science degree. In the past, I've worked onto Angular, C# full stack
-          and general programming with Java. For websites, I've built the front
-          end with Angular, React, and Gastby JS framework.
+          DevOps engineer after transition from doing software development work.
+          I've originally done a bunch of different software development work of full stack sites and mobile apps.
+          Transitioned into DevOps work starting with mobile apps as I got into fastlane library script for deploying apps.
+          That is where I was doing mobile DevOps works. From there, I transitioned doing DevOps work for full stack web application.
         </p>
         <StationaryButton
           css={{ margin: "16px auto", display: "block" }}
