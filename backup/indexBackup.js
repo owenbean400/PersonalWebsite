@@ -16,7 +16,7 @@ import CodeIcon from "../images/expert/code.svg"
 import ArtIcon from "../images/expert/art.svg"
 import RespondsiveIcon from "../images/expert/respondsive.svg"
 
-import HTMLLogo from "../images/skills/HTML5_Logo.png"
+import HTMLLogo from "../images/skills/HTML5_logo.png"
 import CSSLogo from "../images/skills/CSS3_logo.png"
 import JSLogo from "../images/skills/js.png"
 import SassLogo from "../images/skills/sass.png"

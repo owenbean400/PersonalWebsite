@@ -8,7 +8,7 @@ import OwenBeanImageLaptop from "../components/imageFixed/owenBeanImageLaptop.js
 
 import Skills from "../components/skills.js"
 
-import HTMLLogo from "../images/skills/HTML5_Logo.png"
+import HTMLLogo from "../images/skills/HTML5_logo.png"
 import CSSLogo from "../images/skills/CSS3_logo.png"
 import JSLogo from "../images/skills/js.png"
 import JavaLogo from "../images/skills/java.png"
