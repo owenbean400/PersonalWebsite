@@ -6,7 +6,7 @@ import Section from '../components/section';
 import FlexShow from '../components/flexShow';
 
 import BBGame from '../images/games/bbGame.jpg';
-import RPSGame from '../images/games/rps.jpg';
+import RPSGame from '../images/games/rps.JPG';
 import PortfolioDisplay from '../components/portfolioDisplay';
 import StationaryButton from '../components/buttons/stationaryButton';
 import PortfolioButton from '../components/portfolioButtonContain.js';

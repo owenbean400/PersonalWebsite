@@ -8,7 +8,7 @@ import PortfolioButton from '../components/portfolioButtonContain';
 import StationaryButton from '../components/buttons/stationaryButton';
 
 import BBGame from '../images/games/bbGame.jpg';
-import RPSGame from '../images/games/rps.jpg';
+import RPSGame from '../images/games/rps.JPG';
 import Meta from '../components/meta';
 
 class Game extends React.Component{
