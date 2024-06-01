@@ -1,0 +1,36 @@
+name: Personal Website Deployment
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Setup Node JS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli@2.12.34
+
+      - name: Gatsby Build Site
+        run: gatsby build
+
+      - name: Supply CNAME
+        run: echo 'owengbean.com' > ./public/CNAME
+
+      - name: GH Pages Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
