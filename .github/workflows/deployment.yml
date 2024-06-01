@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  deploy_update:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
         run: npm install -g gatsby-cli@2.12.34
 
       - name: Gatsby Build Site
-        run: gatsby build
+        run: cd PersonalWebsite && gatsby build
 
       - name: Supply CNAME
         run: echo 'owengbean.com' > ./public/CNAME
