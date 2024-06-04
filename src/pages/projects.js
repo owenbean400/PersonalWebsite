@@ -26,8 +26,7 @@ export default function Projects(props) {
     <div>
       <Meta
         title="Software Application Projects"
-        desc="Owen Bean has been developing WearOS Apps in his free time with Android Studio and Kotlin.
-              Owen Bean google play developer account is Owen Bean. There are WearOS apps and watchfaces."
+        desc="Owen Bean has been developing software application projects in his free time or for school."
       />
       <Navbar />
       <main className="wearos-main">

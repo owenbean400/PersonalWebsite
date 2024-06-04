@@ -43,8 +43,8 @@ class About extends React.Component {
       <div>
         <Meta
           title="About Me"
-          desc="Owen Guaraldo Bean is a Software developer from Maine. 
-              Owen loves to code with several different program language.
+          desc="Owen Guaraldo Bean is a DevOps Engineer from Maine. 
+              Owen loves to develop pipelines!
               Feel free to check out Owen G. Bean webpage!"
         />
         <Navbar />
