@@ -77,7 +77,7 @@ export default function Projects(props) {
                   It was built with the Flutter framework with sqfite database library to do database operations."
           />
           <AppDisplay
-            link="https://play.google.com/store/apps/details?id=com.owenbean.tipping"
+            link="https://www.bapl.us/"
             title="Dresden Library Website"
             logo={LogoDresden}
             feature={FeatureDresden}
@@ -95,7 +95,7 @@ export default function Projects(props) {
             of the tipping app is to keep tipping math simple and hassle free."
           />
           <AppDisplay
-            link="https://play.google.com/store/apps/details?id=com.owenbean.tipping"
+            link="https://owengbean.com/"
             title="Personal Website"
             logo={LogoPersonal}
             feature={FeaturePersonal}
