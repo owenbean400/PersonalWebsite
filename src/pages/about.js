@@ -18,6 +18,7 @@ import FastlaneLogo from "../images/skills/fastlane.svg"
 import HalldaleLogo from "../images/schools/halldale.png"
 import CATCLogo from "../images/schools/catc.png"
 import SMCCLogo from "../images/schools/smcc.png"
+import USMLogo from "../images/schools/usm.png"
 
 import Resume from "../images/resume/owen_bean_resume.pdf"
 import OwenBeanImage from "../components/imageFixed/owenBeanImage"
@@ -52,12 +53,10 @@ class About extends React.Component {
             <div>
               <h1> About Owen Bean</h1>
               <p className="about-info">
-                I am a software developer. I am currently doing Dev Ops at work,
-                developing on Flutter on the weekend, and at USM to finish
-                computer science degree. In the past, I've worked onto Angular,
-                C# full stack and general programming with Java. For websites,
-                I've built the front end with Angular, React, and Gastby JS
-                framework.
+              DevOps engineer after transition from doing software development work.
+              I've originally done a bunch of different software development work of full stack sites and mobile apps.
+              Transitioned into DevOps work starting with mobile apps as I got into fastlane library script for deploying apps.
+              That is where I was doing mobile DevOps works. From there, I transitioned doing DevOps work for full stack web application.
               </p>
               <StationaryButton title="Contact" link="/contact" />
             </div>
@@ -135,6 +134,15 @@ class About extends React.Component {
           <Section header="Education">
             <div className="education-container">
               <SchoolCard
+                schoolName="USM"
+                major="Bachelor Degree in Computer Science"
+                gpa="3.225"
+                accomplishments={["Honors"]}
+                link="https://usm.maine.edu/"
+                image={USMLogo}
+                imageAlt="USM Logo"
+              />
+              <SchoolCard
                 schoolName="SMCC"
                 major="Computer Science Degree"
                 gpa="3.92"
@@ -155,7 +163,7 @@ class About extends React.Component {
               <SchoolCard
                 schoolName="CATC"
                 major="Graphic Design"
-                gpa="98"
+                gpa="98/100"
                 accomplishments={["NTHS"]}
                 link="http://capitalarea.mainecte.org/"
                 image={CATCLogo}
@@ -196,12 +204,6 @@ class About extends React.Component {
                 altImg="Github Logo"
                 name="GitHub"
                 iconLink="https://github.com/owenbean400"
-              />
-              <Skills
-                image={FreeCodeCampLogo}
-                altImg="FreeCodeCamp Logo"
-                name="FreeCodeCamp"
-                iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"
               />
             </FlexShow>
           </Section>
