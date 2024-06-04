@@ -33,7 +33,6 @@ class Contact extends React.Component{
                             <Skills image={GmailLogo} altImg="Email Logo" name="Email" iconLink="mailto: owenbean400@gmail.com"/>
                             <Skills image={LinkinLogo} altImg="LinkedIn Logo" name="LinkedIn" iconLink="https://www.linkedin.com/in/owen-bean/"/>
                             <Skills image={GithubLogo} altImg="Github Logo" name="GitHub" iconLink="https://github.com/owenbean400"/>
-                            <Skills image={FreeCodeCampLogo} altImg="FreeCodeCamp Logo" name="FreeCodeCamp" iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"/>
                         </FlexShow>
                     <label>
                         Your email:

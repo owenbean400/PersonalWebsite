@@ -15,6 +15,9 @@ import JSLogo from "../images/skills/js.png"
 import JavaLogo from "../images/skills/java.png"
 import KotlinLogo from "../images/skills/kotlin.png"
 import TypescriptLogo from "../images/skills/typescript.png"
+import RubyLogo from "../images/skills/ruby.png"
+import DartLogo from "../images/skills/dart.png"
+import SassLogo from "../images/skills/sass.png"
 
 const logoMap = new Map()
 logoMap.set("JavaScript", JSLogo)
@@ -23,6 +26,9 @@ logoMap.set("HTML", HTMLLogo)
 logoMap.set("CSS", CSSLogo)
 logoMap.set("Java", JavaLogo)
 logoMap.set("TypeScript", TypescriptLogo)
+logoMap.set("Ruby", RubyLogo)
+logoMap.set("Dart", DartLogo)
+logoMap.set("Sass", SassLogo)
 
 export default function Repo(props) {
   const [repo, setRepo] = useState([])

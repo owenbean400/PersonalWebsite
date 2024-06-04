@@ -6,19 +6,19 @@ import Meta from "../components/meta"
 import Skills from "../components/skills"
 import FlexShow from "../components/flexShow"
 
-import HTMLLogo from "../images/skills/HTML5_logo.png"
-import CSSLogo from "../images/skills/CSS3_logo.png"
-import JSLogo from "../images/skills/js.png"
-import JavaLogo from "../images/skills/java.png"
-import KotlinLogo from "../images/skills/kotlin.png"
-import ProgressLogo from "../images/skills/progress.png"
-import SassLogo from "../images/skills/sass.png"
-import ReactLogo from "../images/skills/react.png"
-import GatsbyLogo from "../images/skills/gatsby.png"
+import FirebaseLogo from "../images/skills/firebase.png"
+import GitlabLogo from "../images/skills/gitlab.png"
+import GithubLogo from "../images/skills/GitHub.svg.png"
+import GoogleCloudLogo from "../images/skills/google_cloud.png"
+import XcodeLogo from "../images/skills/xcode.png"
+import AndroidLogo from "../images/skills/android.png"
+import AnsibleLogo from "../images/skills/Ansible_logo.svg.png"
+import FastlaneLogo from "../images/skills/fastlane.svg"
 
 import HalldaleLogo from "../images/schools/halldale.png"
 import CATCLogo from "../images/schools/catc.png"
 import SMCCLogo from "../images/schools/smcc.png"
+import USMLogo from "../images/schools/usm.png"
 
 import Resume from "../images/resume/owen_bean_resume.pdf"
 import OwenBeanImage from "../components/imageFixed/owenBeanImage"
@@ -26,7 +26,6 @@ import OwenBeanImage from "../components/imageFixed/owenBeanImage"
 import GmailLogo from "../images/skills/gmail.png"
 import LinkinLogo from "../images/skills/linkin.png"
 import FreeCodeCampLogo from "../images/skills/freecodecamp.jpg"
-import GithubLogo from "../images/skills/github.png"
 
 import "../pageScss/about.scss"
 import SchoolCard from "../components/schoolCard"
@@ -54,12 +53,10 @@ class About extends React.Component {
             <div>
               <h1> About Owen Bean</h1>
               <p className="about-info">
-                I am a software developer. I am currently doing Dev Ops at work,
-                developing on Flutter on the weekend, and at USM to finish
-                computer science degree. In the past, I've worked onto Angular,
-                C# full stack and general programming with Java. For websites,
-                I've built the front end with Angular, React, and Gastby JS
-                framework.
+              DevOps engineer after transition from doing software development work.
+              I've originally done a bunch of different software development work of full stack sites and mobile apps.
+              Transitioned into DevOps work starting with mobile apps as I got into fastlane library script for deploying apps.
+              That is where I was doing mobile DevOps works. From there, I transitioned doing DevOps work for full stack web application.
               </p>
               <StationaryButton title="Contact" link="/contact" />
             </div>
@@ -69,66 +66,59 @@ class About extends React.Component {
             <div className="skills-container">
               <Skills
                 style={STYLE.item}
-                image={ProgressLogo}
-                altImg="Progress OpenEdge Logo"
-                name="Progress OpenEdge"
-                iconLink="https://www.progress.com/openedge"
+                image={GitlabLogo}
+                altImg="Gitlab Logo"
+                name="Gitlab"
+                iconLink="https://docs.gitlab.com/ee/ci/"
               />
               <Skills
                 style={STYLE.item}
-                image={JSLogo}
-                altImg="Javascript Logo"
-                name="Javascript"
-                iconLink="https://www.javascript.com/"
+                image={GithubLogo}
+                altImg="Github Logo"
+                name="Github"
+                iconLink="https://docs.github.com/en/actions"
               />
               <Skills
                 style={STYLE.item}
-                image={JavaLogo}
-                altImg="Java Logo"
-                name="Java"
-                iconLink="https://www.java.com/en/"
+                image={FastlaneLogo}
+                altImg="Fastlane Logo"
+                name="Fastlane"
+                iconLink="https://docs.fastlane.tools/"
               />
               <Skills
                 style={STYLE.item}
-                image={KotlinLogo}
-                altImg="Kotlin Logo"
-                name="Kotlin"
-                iconLink="https://kotlinlang.org/"
+                image={GoogleCloudLogo}
+                altImg="Google Cloud Logo"
+                name="Google Cloud"
+                iconLink="https://cloud.google.com/docs"
               />
               <Skills
                 style={STYLE.item}
-                image={CSSLogo}
-                altImg="CSS Logo"
-                name="CSS"
-                iconLink="https://www.w3.org/Style/CSS/Overview.en.html"
+                image={XcodeLogo}
+                altImg="Xcode Logo"
+                name="Xcode"
+                iconLink="https://developer.apple.com/documentation/xcode"
               />
               <Skills
                 style={STYLE.item}
-                image={HTMLLogo}
-                altImg="HTML Logo"
-                name="HTML"
-                iconLink="https://html.spec.whatwg.org/"
+                image={AndroidLogo}
+                altImg="Android Logo"
+                name="Android"
+                iconLink="https://developer.android.com/"
               />
               <Skills
                 style={STYLE.item}
-                image={ReactLogo}
-                altImg="React Logo"
-                name="React"
-                iconLink="https://reactjs.org/"
+                image={FirebaseLogo}
+                altImg="Firebase Logo"
+                name="Firebase"
+                iconLink="https://firebase.google.com/docs"
               />
               <Skills
                 style={STYLE.item}
-                image={GatsbyLogo}
-                altImg="Gatsby Logo"
-                name="Gatsby"
-                iconLink="https://www.gatsbyjs.com/"
-              />
-              <Skills
-                style={STYLE.item}
-                image={SassLogo}
-                altImg="Sass Logo"
-                name="Sass"
-                iconLink="https://sass-lang.com/"
+                image={AnsibleLogo}
+                altImg="Ansible Logo"
+                name="Ansible"
+                iconLink="https://docs.ansible.com/"
               />
             </div>
           </Section>
@@ -143,6 +133,15 @@ class About extends React.Component {
           </Section>
           <Section header="Education">
             <div className="education-container">
+              <SchoolCard
+                schoolName="USM"
+                major="Bachelor Degree in Computer Science"
+                gpa="3.225"
+                accomplishments={["Honors"]}
+                link="https://usm.maine.edu/"
+                image={USMLogo}
+                imageAlt="USM Logo"
+              />
               <SchoolCard
                 schoolName="SMCC"
                 major="Computer Science Degree"
@@ -164,7 +163,7 @@ class About extends React.Component {
               <SchoolCard
                 schoolName="CATC"
                 major="Graphic Design"
-                gpa="98"
+                gpa="98/100"
                 accomplishments={["NTHS"]}
                 link="http://capitalarea.mainecte.org/"
                 image={CATCLogo}
@@ -205,12 +204,6 @@ class About extends React.Component {
                 altImg="Github Logo"
                 name="GitHub"
                 iconLink="https://github.com/owenbean400"
-              />
-              <Skills
-                image={FreeCodeCampLogo}
-                altImg="FreeCodeCamp Logo"
-                name="FreeCodeCamp"
-                iconLink="https://www.freecodecamp.org/fcc43fc8b50-7ee6-4f9d-893a-0c40a5d7f4fe"
               />
             </FlexShow>
           </Section>
