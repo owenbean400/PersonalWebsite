@@ -59,9 +59,9 @@ export default function Blog({ data }) {
         <h1>Blog Posts</h1>
         <form>
           <input
+            {...register }
             name="search"
             type="text"
-            ref={register}
             defaultValue=""
             className="blog-search-bar"
             placeholder="Search for Blog"
