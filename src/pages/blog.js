@@ -33,14 +33,18 @@ export default function Blog({ data }) {
           key={data.allMarkdownRemark.edges[i].node.frontmatter.title}
         >
           <Link to={data.allMarkdownRemark.edges[i].node.fields.slug}>
-            {data.allMarkdownRemark.edges[i].node.frontmatter.title}
+            <div className="blog-container">
+              <p className="blog-title">
+                {data.allMarkdownRemark.edges[i].node.frontmatter.title}
+              </p>
+              <div className="blog-info">
+                <p>{data.allMarkdownRemark.edges[i].node.frontmatter.date}</p>
+                <p>
+                  Word Count: {data.allMarkdownRemark.edges[i].node.wordCount.words}
+                </p>
+              </div>
+            </div>
           </Link>
-          <div className="blog-info">
-            <p>{data.allMarkdownRemark.edges[i].node.frontmatter.date}</p>
-            <p>
-              Word Count: {data.allMarkdownRemark.edges[i].node.wordCount.words}
-            </p>
-          </div>
         </div>
       )
       linksCount++
