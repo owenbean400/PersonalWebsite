@@ -7,12 +7,17 @@ import "./content.sass"
 export default function ContentDisplay(props) {
     const [isFullScreenDisplay, setIsFullScreenDisplay] = useState(false);
     const [isPhone, setIsPhone] = useState(true)
-    const [isDisplayCode, setIsDisplayCode] = useState((window.innerWidth <= 768 || !props.isDisplayCodeButton) ? false : props.displayCodeStart ?? false);
+    const [isDisplayCode, setIsDisplayCode] = useState(false);
     const MAX_WIDTH = props.maxWidth ?? 960;
     const MARGIN_BORDER = props.margin ?? "32px auto";
 
     useEffect(() => {
         setIsPhone(window.innerWidth <= 768);
+        if (window.innerWidth <= 768 || !props.isDisplayCodeButton) {
+            setIsDisplayCode(false);
+        } else {
+            setIsDisplayCode(props.displayCodeStart ?? false);
+        }
         window.addEventListener("resize", () =>
             setIsPhone(window.innerWidth <= 768)
         )
@@ -20,7 +25,7 @@ export default function ContentDisplay(props) {
             window.removeEventListener("resize", () =>
                 setIsPhone(window.innerWidth < 768)
             )
-    }, []);
+    }, [props.isDisplayCodeButton, props.displayCodeStart]);
 
     function webContentStyle() {
         let webContentstyles = {}
