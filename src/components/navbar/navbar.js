@@ -6,8 +6,8 @@ import Sidebar from "./sidebar.js"
 import "./navbar.scss"
 
 const LINKS = {
-  repo: ["Repo", "Projects"],
-  blog: ["Blog", "Games"],
+  repo: ["Projects", "Repo"],
+  blog: ["Blog"],
   about: ["About", "Contact"],
 }
 

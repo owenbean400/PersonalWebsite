@@ -1,0 +1,54 @@
+.project-card-container
+    padding: 16px
+    margin: 8px
+    border: black 1px solid
+    border-radius: 8px
+
+    .project-card-title
+        font-weight: bold
+        font-size: 16px
+        margin: 0 0 0 8px
+
+    .project-card-description
+        font-size: 12px
+        font-weight: normal
+        margin: 0 0 0 8px
+        max-width: 500px
+
+    .project-card-technologies-list
+        display: flex
+        flex-wrap: wrap
+        padding: 0
+
+        .project-card-technology
+            list-style-type: none
+            padding: 2px 6px
+            margin: 0 4px
+            display: grid
+            grid-template-columns: auto auto
+            align-items: center
+
+            .project-card-technology-image
+                height: 16px
+                width: auto
+                margin-right: 6px
+
+            .project-card-technology-txt
+                margin: 0
+
+    .project-card-links
+        display: flex
+        flex-wrap: wrap
+        padding: 0
+
+        .project-card-link-list
+            list-style-type: none
+            margin: 2px 4px
+            
+            .project-card-link-link
+                text-decoration: none
+                padding: 4px 8px
+                border-radius: 8px
+                color: black
+                &:hover
+                    background-color: #CCC

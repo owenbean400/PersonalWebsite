@@ -29,12 +29,13 @@
   .repo-repos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     .web-content {
       h4 {
         margin: 0 0 8px 0;
         font-size: 24px;
-        max-width: 300px;
+        max-width: 420px;
       }
 
       .repo-group {

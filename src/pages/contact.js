@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/footer/footer';
 import Navbar from '../components/navbar/navbar';
-import Skills from '../components/skills';
+import Skills from '../components/cards/skillsCard/skillsCard';
 
 import '../pageScss/contact.scss';
 import StationaryButton from '../components/buttons/stationaryButton';
@@ -9,7 +9,6 @@ import StationaryButton from '../components/buttons/stationaryButton';
 import GmailLogo from '../images/skills/gmail.png';
 import LinkinLogo from '../images/skills/linkin.png';
 import GithubLogo from '../images/skills/github.png';
-import FreeCodeCampLogo from '../images/skills/freecodecamp.jpg';
 import FlexShow from '../components/flexShow';
 import Meta from '../components/meta';
 
