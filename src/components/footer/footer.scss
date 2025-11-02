@@ -99,11 +99,7 @@ footer {
 
   p {
     font-size: 12px;
-    @media screen and (max-width: $phonesize) {
-      text-align: center;
-    }
-    @media screen and (min-width: $phonesize) {
-      margin-left: 0.5rem;
-    }
+    margin: 32px 0 8px 0;
+    text-align: center;
   }
 }

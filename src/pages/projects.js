@@ -1,25 +1,23 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Footer from "../components/footer/footer"
 import Navbar from "../components/navbar/navbar"
 
 import Meta from "../components/meta"
 
-import FeatureTip from "../images/project/tipping/feature.jpg"
-import LogoTip from "../images/project/tipping/icon.png"
-import Feature8 from "../images/project/magic8/feature.jpg"
-import Logo8 from "../images/project/magic8/icon.png"
-import LogoDresden from "../images/project/dresden/logo.png"
-import FeatureDresden from "../images/project/dresden/feature.jpg"
-import LogoEMS from "../images/project/ems/logo.png"
-import FeatureEMS from "../images/project/ems/feature.jpg"
-import LogoPersonal from "../images/project/personal/logo.png"
-import FeaturePersonal from "../images/project/personal/feature.jpg"
-import LogoRecipeRoot from "../images/project/recipe_roots/logo.png"
-import FeatureRecipeRoot from "../images/project/recipe_roots/feature.jpg"
-import LogoUSM from "../images/project/usm/logo.png"
-import FeatureUSM from "../images/project/usm/feature.jpg"
+import ProjectCard from "../components/cards/projectCard/projectCard"
 
-import "../pageScss/wearos.scss"
+import DartLogo from "../images/skills/dart.png"
+import JavascriptLogo from "../images/skills/js.png"
+import HTMLLogo from "../images/skills/HTML5_logo.png"
+import CSSLogo from "../images/skills/CSS3_logo.png"
+import FastlaneLogo from "../images/skills/fastlane.svg"
+import RubyLogo from "../images/skills/ruby.png"
+import KotlinLogo from "../images/skills/kotlin.png"
+import JavaLogo from "../images/skills/java.png"
+import AWSLogo from "../images/skills/aws.png"
+import PythonLogo from "../images/skills/python.png"
+
+import "../pageScss/projects.scss"
 
 export default function Projects(props) {
   return (
@@ -29,96 +27,279 @@ export default function Projects(props) {
         desc="Owen Bean has been developing software application projects in his free time or for school."
       />
       <Navbar />
-      <main className="wearos-main">
+      <main className="projects-main">
         <h1>Owen Bean Software Application Projects</h1>
         <p className="descrip">
           Owen Bean personal projects and school projects. 
           There no code from work because that is closed source.
         </p>
         <div className="container">
-          <AppDisplay
-            link="https://responsetimetrack.app/"
-            title="Response Time Track"
-            logo={LogoEMS}
-            feature={FeatureEMS}
-            desc="The Response Time Track application is for EMS and first responders to keep track of there rescue.
-                  The app is available on Google and Apple as an app developed with Flutter framework.
-                  It is currently being used actively from other EMS workers to keep track of their times."
+          <ProjectCard
+              title="Response Time Track"
+              description="The Response Time Track application is for EMS and first responders to keep track of there rescue."
+              technologies={[
+                  {
+                      name: "dart",
+                      imgSrc: DartLogo,
+                      imgAlt: "Dart Logo"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  }]}
+              links={[
+                  {
+                      display: "Website",
+                      href: "https://responsetimetrack.app/"
+                  },
+                  {
+                      display: "Google App",
+                      href: "https://responsetimetrack.app/"
+                  },
+                  {
+                      display: "Apple App",
+                      href: "https://responsetimetrack.app/"
+                  },
+              ]}
           />
-          <AppDisplay
-            link="https://play.google.com/store/apps/details?id=com.owenbean.magic8watch"
-            title="Magic 8 Watch"
-            logo={Logo8}
-            feature={Feature8}
-            desc="Whether you can't decide where to go out to eat with your date or what should you wear for a specific outfit today, 
-                    Magic 8 Watch will give you a Yes/No answer. 
-                    With a Magic 8 Watch, ask a question to yourself that you can't decide. 
-                    Once you have the question, simply tap on the watch to get a Yes/No answer. 
-                    For multiple question, tap the watch again to get a new response."
+          <ProjectCard
+              title="Fastlane Google Data Safety Automation"
+              description="Fastlane Google data safety sheet plugin for CI/CD."
+              technologies={[
+                  {
+                      name: "ruby",
+                      imgSrc: RubyLogo,
+                      imgAlt: "Ruby"
+                  },
+                  {
+                      name: "fastlane",
+                      imgSrc: FastlaneLogo,
+                      imgAlt: "Fastlane"
+                  }]}
+              links={[
+                  {
+                      display: "Repo",
+                      href: "https://github.com/owenbean400/fastlane-plugin-google_data_safety?tab=readme-ov-file"
+                  },
+                  {
+                      display: "Gems",
+                      href: "https://rubygems.org/gems/fastlane-plugin-google_data_safety"
+                  },
+              ]}
           />
-          <AppDisplay
-            link="https://github.com/owenbean400/USMsocialMedia"
-            title="USM Social Media School Project"
-            logo={LogoUSM}
-            feature={FeatureUSM}
-            desc="The USM Social Media website is a group project for COS 430 Software Engineering class.
-                  I was responsible for the entire front-end done in React JS,
-                  developed the infrastructure and CI/CD pipelines for the project to live onto,
-                  and help out with backend in Spring Boot Java."
+          <ProjectCard
+              title="Valorant Website"
+              description="Website for player to showcase rank history, clips, AI chatbot, and about them."
+              technologies={[
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+                  {
+                      name: "golang",
+                      imgSrc: DartLogo,
+                      imgAlt: "Javascript"
+                  }, 
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "Javascript"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "Javascript"
+                  },
+                  {
+                      name: "aws",
+                      imgSrc: AWSLogo,
+                      imgAlt: "AWS"
+                  }]}
+              links={[
+                  {
+                      display: "BeanBaller Website",
+                      href: "https://www.beanballer.com/"
+                  },
+                  {
+                      display: "FE Repo",
+                      href: "https://github.com/owenbean400/beanballer-valorant-rank-web"
+                  },
+                  {
+                      display: "API Repo",
+                      href: "https://github.com/owenbean400/valorant-rank-aws-api"
+                  },
+                  {
+                      display: "AI Chatbot Repo",
+                      href: "https://github.com/owenbean400/valorant-rank-ai-aws-lamda"
+                  }
+              ]}
           />
-          <AppDisplay
-            link="https://github.com/owenbean400/RecipeRootsApp"
-            title="Recipe Roots"
-            logo={LogoRecipeRoot}
-            feature={FeatureRecipeRoot}
-            desc="The Recipe Roots was a school project to build an application that utilizes a database.
-                  Recipe Roots allow for users to save data on their family recipes directly on their phone.
-                  It was built with the Flutter framework with sqfite database library to do database operations."
+          <ProjectCard
+              title="Magic 8 Watch"
+              description="Android watch app for getting random responses from a push of the watch."
+              technologies={[
+                  {
+                      name: "kotlin",
+                      imgSrc: KotlinLogo,
+                      imgAlt: "Kotlin"
+                  }]}
+              links={[
+                  {
+                      display: "Google App",
+                      href: "https://play.google.com/store/apps/details?id=com.owenbean.ems"
+                  },
+                  {
+                      display: "Repo",
+                      href: ""
+                  },
+              ]}
           />
-          <AppDisplay
-            link="https://www.bapl.us/"
-            title="Dresden Library Website"
-            logo={LogoDresden}
-            feature={FeatureDresden}
-            desc="The Dresden Library is a local town library of the town I grew up in during high school.
-                  I have volunteer to revamp their website to keep up to date to web technology."
+          <ProjectCard
+              title="Recipe Roots"
+              description="The Recipe Roots is a Flutter-based school project that lets users save and manage family recipes locally using the sqflite database."
+              technologies={[
+                  {
+                      name: "dart",
+                      imgSrc: DartLogo,
+                      imgAlt: "Dart"
+                  },
+                  {
+                      name: "python",
+                      imgSrc: PythonLogo,
+                      imgAlt: "Python"
+                  },
+                ]}
+              links={[
+                  {
+                      display: "App Repo",
+                      href: "https://github.com/owenbean400/RecipeRootsApp"
+                  },
+                  {
+                      display: "Google App",
+                      href: "https://play.google.com/store/apps/details?id=com.owenbean.reciperoots"
+                  },
+                  {
+                      display: "Apple App",
+                      href: "https://apps.apple.com/us/app/recipe-roots/id6470327080"
+                  },
+              ]}
           />
-          <AppDisplay
-            link="https://play.google.com/store/apps/details?id=com.owenbean.tipping"
-            title="Tipping Calculator"
-            logo={LogoTip}
-            feature={FeatureTip}
-            desc="The tipping calculator does the math for tipping at vast majority of
-            place. Enter the percentage of the tip and the price of the service.
-            Afterwards, the amount of money for the tip is calculated. The goal
-            of the tipping app is to keep tipping math simple and hassle free."
+          <ProjectCard
+              title="Dresden Library Webpage"
+              description="The Dresden Library is my hometown library, where I volunteered to modernize their website with up-to-date web technologies."
+              technologies={[
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "HMTL"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "CSS"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+                ]}
+              links={[
+                  {
+                      display: "Website",
+                      href: "https://www.bapl.us/"
+                  },
+              ]}
           />
-          <AppDisplay
-            link="https://owengbean.com/"
-            title="Personal Website"
-            logo={LogoPersonal}
-            feature={FeaturePersonal}
-            desc="The website you are on now is my own personal website.
-                  It is built on React with Gatsby JS framework."
+          <ProjectCard
+              title="USM Social Media School Project"
+              description="The USM Social Media website was a school group project where I handled the React front end, built the infrastructure and CI/CD pipelines, and contributed to the Spring Boot backend."
+              technologies={[
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "HMTL"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "CSS"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+                  {
+                      name: "java",
+                      imgSrc: JavaLogo,
+                      imgAlt: "Java"
+                  },
+                ]}
+              links={[
+                  {
+                      display: "FE Repo",
+                      href: "https://github.com/owenbean400/USMSocialMediaFrontEnd"
+                  },
+                  {
+                      display: "BE Repo",
+                      href: "https://github.com/myattaw/USMSocialSpring"
+                  }
+              ]}
+          />
+          <ProjectCard
+              title="Tipping Calculator Watch"
+              description="Tipping Calculator watch app."
+              technologies={[
+                  {
+                      name: "kotlin",
+                      imgSrc: KotlinLogo,
+                      imgAlt: "Kotlin"
+                  }
+                ]}
+              links={[
+                  {
+                      display: "Google App",
+                      href: "https://play.google.com/store/apps/details?id=com.owenbean.tipping"
+                  }
+              ]}
+          />
+          <ProjectCard
+              title="Personal Website"
+              description="This website."
+              technologies={[
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+                ]}
+              links={[
+                  {
+                      display: "Website",
+                      href: "https://github.com/owenbean400/PersonalWebsite"
+                  },
+                  {
+                      display: "FE Repo",
+                      href: "https://www.owengbean.com"
+                  }
+              ]}
           />
         </div>
       </main>
       <Footer />
-    </div>
-  )
-}
-
-function AppDisplay(props) {
-  return (
-    <div className="app-container">
-      <a href={props.link} className="link">
-        <div className="title-container">
-          <img src={props.logo} className="logo" />
-          <h4 className="title">{props.title}</h4>
-        </div>
-        <img src={props.feature} className="feature" />
-        <p className="desc">{props.desc}</p>
-      </a>
     </div>
   )
 }

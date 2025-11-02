@@ -17,7 +17,7 @@ import TypescriptLogo from "../images/skills/typescript.png"
 import RubyLogo from "../images/skills/ruby.png"
 import DartLogo from "../images/skills/dart.png"
 import SassLogo from "../images/skills/sass.png"
-import ContentDisplay from "../components/index/contentDisplay"
+import ContentDisplay from "../components/webTemplate/contentDisplay"
 
 const logoMap = new Map()
 logoMap.set("JavaScript", JSLogo)

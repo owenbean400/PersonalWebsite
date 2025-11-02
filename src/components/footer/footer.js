@@ -10,14 +10,14 @@ class Footer extends React.Component {
     return (
       <div>
         <div className="action-container">
-          <StationaryButton title="Repo" link="/repo" />
+          <StationaryButton title="Projects" link="/projects" />
           <StationaryButton title="About" link="/about" />
           <StationaryButton title="Contact" link="/contact" />
         </div>
         <footer>
           <div className="links-container">
-            <FooterLinks footerlinks={["Repo", "Projects"]} />
-            <FooterLinks footerlinks={["Blog", "Games", "Privacy Policy"]} />
+            <FooterLinks footerlinks={["Projects", "Repo"]} />
+            <FooterLinks footerlinks={["Blog", "Privacy Policy"]} />
             <FooterLinks footerlinks={["Contact", "About"]} />
           </div>
           <p>
