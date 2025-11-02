@@ -49,18 +49,18 @@ export default function Projects(props) {
                       imgAlt: "Javascript"
                   }]}
               links={[
-                  {
-                      display: "Website",
-                      href: "https://responsetimetrack.app/"
-                  },
-                  {
-                      display: "Google App",
-                      href: "https://responsetimetrack.app/"
-                  },
-                  {
-                      display: "Apple App",
-                      href: "https://responsetimetrack.app/"
-                  },
+                    {
+                        display: "Website",
+                        href: "https://responsetimetrack.app/"
+                    },
+                    {
+                        display: "Google App",
+                        href: "https://play.google.com/store/apps/details?id=com.owenbean.ems"
+                    },
+                    {
+                        display: "Apple App",
+                        href: "https://apps.apple.com/us/app/response-time-track/id1629269991"
+                    },
               ]}
           />
           <ProjectCard
