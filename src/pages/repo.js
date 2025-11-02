@@ -4,7 +4,6 @@ import Navbar from "../components/navbar/navbar"
 
 import "../pageScss/repo.scss"
 
-import WebContent from "../components/index/webContent"
 import StationaryButton from "../components/buttons/stationaryButton"
 
 import Meta from "../components/meta"
@@ -125,17 +124,13 @@ function toTitle(str, shrink) {
   let chars = str.split("");
   let capsInRow = 0;
   for (let i = 0; i < chars.length; i++) {
-    let nextChar = "";
     let prevChar = "";
     capsInRow = (chars[i].toLowerCase() !== chars[i]) ? capsInRow + 1 : 0;
-    if (i + 1 < chars.length) {
-      nextChar = chars[i + 1];
-    }
     if (i !== 0) {
       prevChar = chars[i - 1];
     }
     if (rtnStr.length === 0) rtnStr += chars[i].toUpperCase()
-    else if (chars[i] == "-") rtnStr += " "
+    else if (chars[i] === "-") rtnStr += " "
     else if (chars[i].toLowerCase() !== chars[i] && capsInRow < 2) rtnStr += " " + chars[i]
     else if (/^\d+$/.test(chars[i]) && !/^\d+$/.test(prevChar)) rtnStr += " " + chars[i]
     else rtnStr += chars[i]

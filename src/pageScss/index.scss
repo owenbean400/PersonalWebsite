@@ -21,6 +21,12 @@ html {
   scrollbar-color: red;
 }
 
+.owen-header-container {
+  height: 320px;
+  width: 100%;
+  background-size: contain;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

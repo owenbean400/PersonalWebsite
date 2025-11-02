@@ -20,7 +20,7 @@ export default function ContentDisplay(props) {
             window.removeEventListener("resize", () =>
                 setIsPhone(window.innerWidth < 768)
             )
-    })
+    }, []);
 
     function webContentStyle() {
         let webContentstyles = {}
@@ -87,6 +87,11 @@ export default function ContentDisplay(props) {
                     isDisplayCodeButton={props.isDisplayCodeButton && !isDisplayCode}
                     isDisplayCode={isDisplayCode}
                     setIsDisplayCode={setIsDisplayCode}
+                    backgroundImage={props.backgroundImage}
+                    backgroundColor={props.backgroundColor}
+                    backgroundPosition={props.backgroundPosition}
+                    backgroundRepeat={props.backgroundRepeat}
+                    backgroundSize={props.backgroundSize}
                 >
                     {props.children}
                 </WebContent>
