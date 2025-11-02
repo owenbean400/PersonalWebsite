@@ -35,7 +35,7 @@ export default function Test() {
       <div style={{ marginTop: "100px" }}></div>
       <ContentDisplay
         title="Owen Website"
-        html="
+        html='
         <h1>
           Owen G. Bean
           <br />
@@ -43,8 +43,10 @@ export default function Test() {
         </h1>
         <button>Repo</button>
         <button>Contact</button>
-        <img src='OwenBeanLaptop.png' />"
+        <img src="Laptop.png"></img>'
         reverse={true}
+        displayCodeStart={true}
+        isDisplayCodeButton={true}
       >
         <h1>
           Owen G. Bean
@@ -73,6 +75,8 @@ export default function Test() {
           <p> {{aboutMe.desc}} </p>
           <button>About Me</button>
         "
+        displayCodeStart={false}
+        isDisplayCodeButton={true}
       >
         <p>
           DevOps engineer after transition from doing software development work.
@@ -94,6 +98,8 @@ export default function Test() {
           <p>Various Scripting and Programming Languages</p>
       '
         reverse={true}
+        displayCodeStart={true}
+        isDisplayCodeButton={true}
       >
         <HeadSkills></HeadSkills>
         <StationaryButton
@@ -110,6 +116,8 @@ export default function Test() {
           <a href="www.github.com"></a>
           '
         reverse={false}
+        displayCodeStart={true}
+        isDisplayCodeButton={true}
       >
         <HeadContact></HeadContact>
         <StationaryButton

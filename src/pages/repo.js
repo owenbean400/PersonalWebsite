@@ -18,6 +18,7 @@ import TypescriptLogo from "../images/skills/typescript.png"
 import RubyLogo from "../images/skills/ruby.png"
 import DartLogo from "../images/skills/dart.png"
 import SassLogo from "../images/skills/sass.png"
+import ContentDisplay from "../components/index/contentDisplay"
 
 const logoMap = new Map()
 logoMap.set("JavaScript", JSLogo)
@@ -43,43 +44,47 @@ export default function Repo(props) {
     repo.length > 0 ? (
       repo.map(stuff => {
         return (
-          <WebContent
+          <ContentDisplay
+            displayCodeStart={false}
+            isDisplayCodeButton={false}
             title={toTitle(stuff.name, true)}
-            reverse={false}
-            noPad={false}
-            isHTML={false}
+            maxWidth={448}
+            margin="32px"
           >
-            <h4>{toTitle(stuff.name, false)}</h4>
-            <div className="repo-group">
-              <div className="repo-owner">
-                <img src={stuff.owner.avatar_url} alt="Owen Bean Github"></img>
-                <h5>{stuff.owner.login}</h5>
+            <div
+              style={{ height: "448px" }}>
+              <h4>{toTitle(stuff.name, false)}</h4>
+              <div className="repo-group">
+                <div className="repo-owner">
+                  <img src={stuff.owner.avatar_url} alt="Owen Bean Github"></img>
+                  <h5>{stuff.owner.login}</h5>
+                </div>
+                <h6 className="repo-descript">{stuff.description}</h6>
               </div>
-              <h6 className="repo-descript">{stuff.description}</h6>
+              <div className="repo-logo-group">
+                {logoMap.get(stuff.language) !== undefined ? (
+                  <img
+                    className="repo-logo-img"
+                    src={logoMap.get(stuff.language)}
+                    alt={stuff.language + " Logo"}
+                  />
+                ) : undefined}
+                <p className="repo-logo-program">{stuff.language}</p>
+              </div>
+              <p className="repo-date">
+                Updated: {dateToString(stuff.updated_at)}
+              </p>
+              <p className="repo-date">
+                Created: {dateToString(stuff.created_at)}
+              </p>
+              <StationaryButton
+                css={{ margin: "12px 0", borderRadius: "16px" }}
+                isNewTab={true}
+                title="Link to Repo"
+                link={stuff.html_url}
+              />
             </div>
-            <div className="repo-logo-group">
-              {logoMap.get(stuff.language) !== undefined ? (
-                <img
-                  className="repo-logo-img"
-                  src={logoMap.get(stuff.language)}
-                  alt={stuff.language + " Logo"}
-                />
-              ) : undefined}
-              <p className="repo-logo-program">{stuff.language}</p>
-            </div>
-            <p className="repo-date">
-              Updated: {dateToString(stuff.updated_at)}
-            </p>
-            <p className="repo-date">
-              Created: {dateToString(stuff.created_at)}
-            </p>
-            <StationaryButton
-              css={{ margin: "12px 0", borderRadius: "16px" }}
-              isNewTab={true}
-              title="Link to Repo"
-              link={stuff.html_url}
-            />
-          </WebContent>
+          </ContentDisplay>
         )
       })
     ) : (
@@ -117,14 +122,26 @@ function dateToString(dt) {
 
 function toTitle(str, shrink) {
   let rtnStr = ""
-  for (let char of str.split("")) {
-    if (rtnStr.length === 0) rtnStr += char.toUpperCase()
-    else if (char == "-") rtnStr += " "
-    else if (char.toLowerCase() !== char) rtnStr += " " + char
-    else rtnStr += char
+  let chars = str.split("");
+  let capsInRow = 0;
+  for (let i = 0; i < chars.length; i++) {
+    let nextChar = "";
+    let prevChar = "";
+    capsInRow = (chars[i].toLowerCase() !== chars[i]) ? capsInRow + 1 : 0;
+    if (i + 1 < chars.length) {
+      nextChar = chars[i + 1];
+    }
+    if (i !== 0) {
+      prevChar = chars[i - 1];
+    }
+    if (rtnStr.length === 0) rtnStr += chars[i].toUpperCase()
+    else if (chars[i] == "-") rtnStr += " "
+    else if (chars[i].toLowerCase() !== chars[i] && capsInRow < 2) rtnStr += " " + chars[i]
+    else if (/^\d+$/.test(chars[i]) && !/^\d+$/.test(prevChar)) rtnStr += " " + chars[i]
+    else rtnStr += chars[i]
   }
-  if (rtnStr.length > 12 && shrink) {
-    rtnStr = rtnStr.substring(0, 12)
+  if (rtnStr.length > 16 && shrink) {
+    rtnStr = rtnStr.substring(0, 16)
     rtnStr =
       rtnStr.search(" ") > 0
         ? rtnStr.substring(0, rtnStr.lastIndexOf(" "))

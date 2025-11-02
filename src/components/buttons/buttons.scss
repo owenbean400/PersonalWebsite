@@ -137,6 +137,7 @@
   font-size: 18px;
   cursor: pointer;
   transition: color 0.166s;
+  border-radius: 8px;
   &:hover {
     @include animation("backgroundChange 0.15s 1");
     background: rgba(45, 30, 142, 1);
