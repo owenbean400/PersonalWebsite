@@ -131,6 +131,10 @@ export default function Projects(props) {
                       href: "https://github.com/owenbean400/valorant-rank-aws-api"
                   },
                   {
+                    display: "MCP Server Repo",
+                    href: "https://github.com/owenbean400/valorant-rank-mcp-server"
+                  },
+                  {
                       display: "AI Chatbot Repo",
                       href: "https://github.com/owenbean400/valorant-rank-ai-aws-lamda"
                   }
@@ -152,8 +156,87 @@ export default function Projects(props) {
                   },
                   {
                       display: "Repo",
-                      href: ""
+                      href: "https://github.com/owenbean400/magic-8-watch-wear-os"
                   },
+              ]}
+          />
+          <ProjectCard
+              title="Owen's Hack Portland Webpage"
+              description="Hack Portland is a local meetup group in Portland, Maine, that gets together on Tuesday nights to eat pizza and talk about tech. This website is part of a tilde community hosted on a Linux server that allows each user to create and host their own static site."
+              technologies={[
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+              ]}
+              links={[
+                {
+                  display: "Webpage",
+                  href: "https://hackportland.club/~owen/"
+                },
+                {
+                  display: "Repo",
+                  href: "https://github.com/owenbean400/owenhackportland"
+                }
+              ]}
+          />
+          <ProjectCard
+              title="Tipping Calculator Watch"
+              description="Tipping Calculator app for Android watches on Wear OS."
+              technologies={[
+                  {
+                      name: "kotlin",
+                      imgSrc: KotlinLogo,
+                      imgAlt: "Kotlin"
+                  }
+                ]}
+              links={[
+                  {
+                      display: "Google App",
+                      href: "https://play.google.com/store/apps/details?id=com.owenbean.tipping"
+                  }
+              ]}
+          />
+          <ProjectCard
+              title="Personal Website"
+              description="Personal website for displaying about me, side projects, and blogs."
+              technologies={[
+                  {
+                      name: "html",
+                      imgSrc: HTMLLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "css",
+                      imgSrc: CSSLogo,
+                      imgAlt: "Html"
+                  },
+                  {
+                      name: "javascript",
+                      imgSrc: JavascriptLogo,
+                      imgAlt: "Javascript"
+                  },
+                ]}
+              links={[
+                  {
+                      display: "Website",
+                      href: "https://www.owengbean.com"
+                  },
+                  {
+                      display: "FE Repo",
+                      href: "https://github.com/owenbean400/PersonalWebsite"
+                  }
               ]}
           />
           <ProjectCard
@@ -246,54 +329,6 @@ export default function Projects(props) {
                   {
                       display: "BE Repo",
                       href: "https://github.com/myattaw/USMSocialSpring"
-                  }
-              ]}
-          />
-          <ProjectCard
-              title="Tipping Calculator Watch"
-              description="Tipping Calculator watch app."
-              technologies={[
-                  {
-                      name: "kotlin",
-                      imgSrc: KotlinLogo,
-                      imgAlt: "Kotlin"
-                  }
-                ]}
-              links={[
-                  {
-                      display: "Google App",
-                      href: "https://play.google.com/store/apps/details?id=com.owenbean.tipping"
-                  }
-              ]}
-          />
-          <ProjectCard
-              title="Personal Website"
-              description="This website."
-              technologies={[
-                  {
-                      name: "html",
-                      imgSrc: HTMLLogo,
-                      imgAlt: "Html"
-                  },
-                  {
-                      name: "css",
-                      imgSrc: CSSLogo,
-                      imgAlt: "Html"
-                  },
-                  {
-                      name: "javascript",
-                      imgSrc: JavascriptLogo,
-                      imgAlt: "Javascript"
-                  },
-                ]}
-              links={[
-                  {
-                      display: "Website",
-                      href: "https://github.com/owenbean400/PersonalWebsite"
-                  },
-                  {
-                      display: "FE Repo",
-                      href: "https://www.owengbean.com"
                   }
               ]}
           />
