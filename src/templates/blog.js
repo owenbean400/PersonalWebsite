@@ -26,7 +26,9 @@ const STYLE = {
         padding: '80px 24px 24px 24px',
     },
     headerContainer: {
-        textAlign: 'center',
+        margin: '0 auto 0 auto',
+        textAlign: 'left',
+        maxWidth: '780px'
     },
     date: {
         fontSize: '12px',
