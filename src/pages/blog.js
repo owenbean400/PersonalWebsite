@@ -6,9 +6,13 @@ import Navbar from "../components/navbar/navbar"
 import "../pageScss/blog.sass"
 
 export default function Blog({ data }) {
-  const { register, watch } = useForm()
+  const { register, watch, resetField } = useForm()
   var links = []
   var linksCount = 0
+
+  const wordCountToEstimatedReadTime = (wordCount) => Math.floor(wordCount / 238) + 1
+
+  const clearInput = () => resetField("search");
 
   for (let i = 0; i < data.allMarkdownRemark.edges.length; i++) {
     var titleSearch = data.allMarkdownRemark.edges[i].node.frontmatter.title
@@ -40,7 +44,8 @@ export default function Blog({ data }) {
               <div className="blog-info">
                 <p>{data.allMarkdownRemark.edges[i].node.frontmatter.date}</p>
                 <p>
-                  Word Count: {data.allMarkdownRemark.edges[i].node.wordCount.words}
+                  <div class="clock-icon"></div>
+                  {wordCountToEstimatedReadTime(data.allMarkdownRemark.edges[i].node.wordCount.words)} min read
                 </p>
               </div>
             </div>
@@ -63,13 +68,13 @@ export default function Blog({ data }) {
         <h1>Blog Posts</h1>
         <form>
           <input
-            {...register }
+            {...register("search") }
             name="search"
             type="text"
             defaultValue=""
             className="blog-search-bar"
-            placeholder="Search for Blog"
-          />
+            placeholder="Search post..."/>
+        <button id="clear" class="" type="button" onClick={clearInput}>X</button>
         </form>
         <div className="blog-link-container">{links}</div>
         {linksCount < 4 ? (
